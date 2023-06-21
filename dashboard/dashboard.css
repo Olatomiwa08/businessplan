@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #0b42b0;
+    gap: 20px;
+}
+.pageavatar{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    border: 2px solid #d2d2d2;
+    border-radius: 50%;
+    text-align: right;
+}
+.pageavatar img{
+    width: 48px;
+    height: 48px;
+}
+.pageavatar i{
+    background: #0b42b0;
+    position: absolute;
+    text-align: right;
+    bottom: 11px;
+    left: 54px;
+    border-radius: 8px;
+    padding: 4px;
+}
+.pagename h2{
+    font-size: 24px;
+}
+header .coged{
+    background: #0b42b0;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+nav{
+    width: 300px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    max-width: 240px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.14), 6px 0 6px 0 rgba(0,0,0,.06);
+    border-right: 1px solid rgba(0,0,0,.14);
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    background-color: #0e64e6;
+    padding: 14px;
+    width: 100%;
+}
+.userprofile{
+    display: flex;
+    width: 90px;
+    height: 89px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #f5f6f6;
+    padding: 8px;
+    box-shadow: 5px 11px 20px 0 rgba(14,14,14,.33), 6px 0 6px 0 rgba(12,11,11,.28);
+}
+.userprofile img{
+    margin-bottom: 16px;
+}
+.profileid{
+    position: absolute;
+    color: #0b42b0;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.profilename{
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+#paid{
+    color: white;
+    opacity: .5;
+    font-size: 12px;
+}
+.idea{
+    display: flex;
+    background: #fff;
+    color: #ffba00;
+    width: 100%;
+    max-width: 82px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 8px 2px 8px;
+    margin: 5px auto 0;
+    border-radius: 9px;
+    box-shadow: 0 7px 6px -7px rgba(41,47,77,.43);
+    transition: all .25s;
+    text-align: center
+}
+.idea:hover {
+    content: "collection";
+    background: #ffba00;
+    display: flex;
+    color: #FFF;
+}
+.idea:hover svg+p{
+    display: none;
+}
+.idea:hover p::after{
+    content: "collection";
+    display: block;
+    color: #FFF;
+    position: absolute;
+    top: 0;
+}
+.idea img{
+    stroke: #ffba00;
+    stroke-width: 2px;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.idea p{
+    font-size: 12px;
+    display: flex;
+    font-weight: 500;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+.menu a{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    gap: 8px;
+    /* justify-content: center; */
+}
+.menu a img,svg{
+    color: #909399;
+    width: 24px;
+    font-weight: 900;
+    stroke-width: 2px;
+}

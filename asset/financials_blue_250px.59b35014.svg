@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Capa_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+	 style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Path_2_);}
+	.st1{fill:#7BCAFF;}
+	.st2{fill:#54A2FF;}
+	.st3{fill:#2B8CFF;}
+	.st4{fill:#117AE4;}
+	.st5{fill:#AAB4BD;}
+	.st6{fill:#FFCD48;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="250" width="310.3" x="103.8" y="131"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<radialGradient id="Path_2_" cx="149.7805" cy="238.1534" r="1.5855" gradientTransform="matrix(100.9308 0 0 93.8183 -14858.4893 -22067.2305)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#AFEEFF"/>
+	<stop  offset="0.1927" style="stop-color:#BBF1FF"/>
+	<stop  offset="0.7025" style="stop-color:#D7F8FF"/>
+	<stop  offset="1" style="stop-color:#E1FAFF"/>
+</radialGradient>
+<path id="Path_1_" class="st0" d="M385.1,316.5h11.1c8.4,0,16.3-5.2,17.7-12.9c1.9-10-6.4-18.6-16.7-18.6h-21.4c-4.8,0-9.2-3-10-7.4
+	c-1-5.6,3.4-10.5,9.1-10.6h10.2c8.1,0,14.5-6.1,14.5-13.5l0,0c0-7.5-6.6-13.5-14.5-13.5h-6.3c-8.4,0-16.3-5.2-17.7-12.9
+	c-1.9-10,6.4-18.6,16.7-18.6h8.7c8.4,0,16.3-5.2,17.7-12.9c1.9-10-6.4-18.6-16.7-18.6l-49,2.2l-28.1,4.8l-57.7,7.2l-38,3.9l-28.6,1
+	l-59.4-1.1c-8.4,0-16.3,5.2-17.7,12.9c-1.9,10,6.4,18.6,16.7,18.6h8.7c9.2,0,17.4,6.4,17.9,14.9c0.5,9.1-7.3,16.6-16.9,16.6h-4.2
+	c-6.4,0-12.2,4.3-12.7,10.1c-0.8,6.8,4.9,12.5,12.1,12.5l0,0c4.8,0,9.3,2.5,11.1,6.6c3.6,8.2-2.8,16-11.1,16h-11.3
+	c-7.9,0-14.9,5.5-15.4,12.8c-0.5,7.8,6.3,14.3,14.5,14.3h23.8c4.8,0,9.3,3,10.1,7.5c1,5.6-3.7,10.6-9.6,10.6h-4
+	c-7.9,0-14.9,5.5-15.4,12.8c-0.5,7.8,6.3,14.3,14.5,14.3h53.3h38.8h106.7v-4.5h47.8c7.7,0,14.5-5.2,15.2-12.4
+	c0.8-8-6.1-14.7-14.5-14.7c-4.9,0-9.9-2-12.3-6C366.4,327.1,374.4,316.5,385.1,316.5z"/>
+<g>
+	<path class="st1" d="M201.5,286.7h-39.3c-2.1,0-3.9,1.8-3.9,3.9v86.6c0,2.1,1.8,3.9,3.9,3.9h39.3c2.1,0,3.9-1.8,3.9-3.9v-86.6
+		C205.3,288.5,203.5,286.7,201.5,286.7z"/>
+	<g>
+		<path class="st2" d="M169.9,377.1v-86.6c0-2.1,1.8-3.9,3.9-3.9h-11.8c-2.1,0-3.9,1.8-3.9,3.9v86.6c0,2.1,1.8,3.9,3.9,3.9h11.8
+			C171.8,381,169.9,379.4,169.9,377.1z"/>
+		<path class="st2" d="M276.1,267.1h-39.3c-2.1,0-3.9,1.8-3.9,3.9v106.2c0,2.1,1.8,3.9,3.9,3.9h39.3c2.1,0,3.9-1.8,3.9-3.9V270.9
+			C280.1,268.8,278.2,267.1,276.1,267.1z"/>
+	</g>
+	<g>
+		<path class="st3" d="M244.7,377.1V270.9c0-2.1,1.8-3.9,3.9-3.9h-11.8c-2.1,0-3.9,1.8-3.9,3.9v106.2c0,2.1,1.8,3.9,3.9,3.9h11.8
+			C246.4,381,244.7,379.4,244.7,377.1z"/>
+		<path class="st3" d="M350.9,223.9h-39.3c-2.1,0-3.9,1.8-3.9,3.9v149.4c0,2.1,1.8,3.9,3.9,3.9h39.3c2.1,0,3.9-1.8,3.9-3.9V227.7
+			C354.7,225.6,353.1,223.9,350.9,223.9z"/>
+	</g>
+	<path class="st4" d="M319.5,377.1V227.7c0-2.1,1.8-3.9,3.9-3.9h-11.8c-2.1,0-3.9,1.8-3.9,3.9v149.4c0,2.1,1.8,3.9,3.9,3.9h11.8
+		C321.1,381,319.5,379.4,319.5,377.1z"/>
+	<path class="st5" d="M378.4,381H134.5c-2.1,0-3.9-1.8-3.9-3.9c0-2.1,1.8-3.9,3.9-3.9h243.9c2.1,0,3.9,1.8,3.9,3.9
+		C382.3,379.2,380.5,381,378.4,381z"/>
+	<path class="st6" d="M367.9,132.9c-1.6-1.4-3.9-2.1-6.2-1.9l-31.5,3.9c-4.4,0.5-7.3,4.5-6.8,8.8c0.5,4.4,4.5,7.3,8.8,6.8l11.8-1.4
+		c-39.9,49.8-89.2,75.2-124.6,87.8c-41.3,14.8-73.1,15.9-73.4,15.9c-4.4,0.2-7.8,3.8-7.6,8.1c0.2,4.2,3.6,7.6,7.8,7.6h0.2
+		c1.3,0,34.1-1.2,77.6-16.7c25.5-9.1,49.3-21.3,71-36.2c22.4-15.4,42.4-34,59.6-55v9.6c0,4.4,3.6,7.8,7.8,7.8s7.8-3.6,7.8-7.8v-31.5
+		C370.5,136.5,369.5,134.4,367.9,132.9z"/>
+</g>
+</svg>

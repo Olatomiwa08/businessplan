@@ -1,0 +1,87 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-505.82" y1="1264.77" x2="-505.82" y2="1265.77" gradientTransform="matrix(76.2, 0, 0, -62, 38594.85, 78509.91)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2d8fe8"/>
+      <stop offset="1" stop-color="#3bb5f1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-504.93" y1="1263.79" x2="-504.93" y2="1262.79" gradientTransform="matrix(67.14, 0, 0, -56, 33954.93, 70810.11)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fffaf6"/>
+      <stop offset="1" stop-color="#fffaf2"/>
+    </linearGradient>
+    <mask id="mask" x="14.03" y="38" width="69.06" height="52.17" maskUnits="userSpaceOnUse">
+      <g id="mask-4">
+        <path id="path-3" d="M68.44,88a25,25,0,1,0-34.7,0h-9l.44.72A32,32,0,1,1,77.55,88Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-3" x1="-490.55" y1="1258.92" x2="-491.81" y2="1258.92" gradientTransform="matrix(23.65, 0, 0, -46.17, 11641.07, 58185.84)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff634d"/>
+      <stop offset="0.21" stop-color="#fd6464"/>
+      <stop offset="0.38" stop-color="#fc6574"/>
+      <stop offset="0.52" stop-color="#fc6582"/>
+      <stop offset="0.79" stop-color="#fa6666"/>
+      <stop offset="0.99" stop-color="#fa6667"/>
+      <stop offset="1" stop-color="#fa669a"/>
+    </linearGradient>
+    <mask id="mask-2" x="19.09" y="38" width="69.58" height="53.17" maskUnits="userSpaceOnUse">
+      <g id="mask-4-2" data-name="mask-4">
+        <path id="path-3-2" data-name="path-3" d="M68.44,88a25,25,0,1,0-34.7,0h-9l.44.72A32,32,0,1,1,77.55,88Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-4" x1="-533.64" y1="1259.58" x2="-533.64" y2="1258.58" gradientTransform="translate(-12542.37 58186.84) rotate(180) scale(23.65 46.17)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#42d778"/>
+      <stop offset="0.43" stop-color="#3dca76"/>
+      <stop offset="1" stop-color="#34b171"/>
+    </linearGradient>
+    <mask id="mask-3" x="19.09" y="31.67" width="64" height="57.06" maskUnits="userSpaceOnUse">
+      <g id="mask-4-3" data-name="mask-4">
+        <path id="path-3-3" data-name="path-3" d="M68.44,88a25,25,0,1,0-34.7,0h-9l.44.72A32,32,0,1,1,77.55,88Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-5" x1="-461.61" y1="1290.98" x2="-462.53" y2="1290.98" gradientTransform="matrix(2.06, 23.52, 55.5, -4.86, -70645.36, 17183.57)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffdb7b"/>
+      <stop offset="1" stop-color="#ffba00"/>
+      <stop offset="1" stop-color="#ffb65b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="-491.14" y1="1215.37" x2="-491.14" y2="1216.37" gradientTransform="matrix(23.6, 0, 0, -16.91, 11649.72, 20627.58)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="-484.03" y1="1219.98" x2="-484.95" y2="1219.98" gradientTransform="matrix(18, 0, 0, -18, 8744.48, 21985.7)" xlink:href="#linear-gradient-5"/>
+    <linearGradient id="linear-gradient-8" x1="-386.91" y1="996.12" x2="-386.91" y2="997.12" gradientTransform="matrix(4, 0, 0, -4, 1594.73, 4013.5)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-9" x1="-345.08" y1="900.4" x2="-345.08" y2="901.4" gradientTransform="matrix(3, 0, 0, -3, 1101.82, 2724.2)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-10" x1="-261.41" y1="708.95" x2="-261.41" y2="709.95" gradientTransform="matrix(2, 0, 0, -2, 558.91, 1434.9)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-11" x1="-345.08" y1="900.4" x2="-345.08" y2="901.4" gradientTransform="matrix(3, 0, 0, -3, 1046.82, 2746.2)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-12" x1="-261.41" y1="708.95" x2="-261.41" y2="709.95" gradientTransform="matrix(2, 0, 0, -2, 609.91, 1462.9)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-13" x1="-476.06" y1="1201.75" x2="-476.98" y2="1201.75" gradientTransform="matrix(14, 0, 0, -14, 6751.83, 16854.5)" xlink:href="#linear-gradient-5"/>
+    <linearGradient id="linear-gradient-14" x1="-461.72" y1="1168.93" x2="-462.64" y2="1168.93" gradientTransform="matrix(10, 0, 0, -10, 4674.19, 11703.3)" xlink:href="#linear-gradient-5"/>
+  </defs>
+  <title>corrected.idea-score-latest.1ffd6532</title>
+  <g id="idea-score">
+    <g id="Group-3">
+      <g id="icons8-speed">
+        <path id="Path" d="M51.09,32a38,38,0,0,0-38,38,37.45,37.45,0,0,0,8.6,24h59a37.45,37.45,0,0,0,8.6-24A38.28,38.28,0,0,0,51.09,32Z" fill="url(#linear-gradient)"/>
+        <path id="Path-2" data-name="Path" d="M83.09,70a32,32,0,0,0-64,0,31.46,31.46,0,0,0,5.6,18H17.63c.76,1.4,1.38,2.46,1.86,3.17s1.21,1.65,2.2,2.83h59l2.4-2.83L84.78,88H77.32A33.18,33.18,0,0,0,83.09,70Z" fill="url(#linear-gradient-2)"/>
+        <g id="Path-9">
+          <g id="Mask-4-4" data-name="Mask">
+            <path id="path-3-4" data-name="path-3" d="M68.44,88a25,25,0,1,0-34.7,0h-9l.44.72A32,32,0,1,1,77.55,88Z" fill="#d8d8d8" fill-rule="evenodd"/>
+          </g>
+          <g mask="url(#mask)">
+            <path d="M32.09,44l5.58,7.65L33,79.15l1.88,11L17.79,88.72Q13.55,57,14.09,57T32.09,44Z" fill="url(#linear-gradient-3)"/>
+          </g>
+          <g mask="url(#mask-2)">
+            <path id="Path-9-Copy-2" d="M70.61,45,65,52.65l4.67,27.5-1.88,11,17.1-1.45Q89.17,58,88.61,58T70.61,45Z" fill="url(#linear-gradient-4)"/>
+          </g>
+          <g mask="url(#mask-3)">
+            <path id="Path-9-Copy" d="M76,48.49l-7.13,6.23L41.1,52.45l-5.79,2.16L19.75,44.31Q61.47,31.14,61.52,31.69T76,48.49Z" fill="url(#linear-gradient-5)"/>
+          </g>
+        </g>
+        <path id="Combined-Shape" d="M54.91,65.42l11.76-6.93,2,3.46L56.66,69a5.12,5.12,0,0,1,0,.56,5.8,5.8,0,0,1-11.6,0,5.68,5.68,0,0,1,5.8-5.8A5.79,5.79,0,0,1,54.91,65.42Z" fill="url(#linear-gradient-6)"/>
+      </g>
+      <path id="Path-3-5" data-name="Path" d="M32,23.8a1,1,0,0,0-.9-.74l-5.25-.28L24,17.68a1,1,0,0,0-1.86,0l-1.87,5.11L15,23.07a1,1,0,0,0-.9.73A1.08,1.08,0,0,0,14.47,25l4.08,3.43-1.42,5.27a1.11,1.11,0,0,0,.36,1.14,1,1,0,0,0,1.13.05l4.47-3,4.46,3a1,1,0,0,0,1.14-.05,1.1,1.1,0,0,0,.36-1.14l-1.42-5.27L31.71,25A1.08,1.08,0,0,0,32,23.8Z" fill="url(#linear-gradient-7)"/>
+      <circle id="Oval" cx="47.09" cy="27" r="2" fill="url(#linear-gradient-8)"/>
+      <circle id="Oval-Copy-3" cx="66.59" cy="21.5" r="1.5" fill="url(#linear-gradient-9)"/>
+      <circle id="Oval-Copy-2" cx="36.09" cy="16" r="1" fill="url(#linear-gradient-10)"/>
+      <circle id="Oval-Copy-4" cx="11.59" cy="43.5" r="1.5" fill="url(#linear-gradient-11)"/>
+      <circle id="Oval-Copy-5" cx="87.09" cy="44" r="1" fill="url(#linear-gradient-12)"/>
+      <path id="Path-Copy" d="M87.05,28.29a.77.77,0,0,0-.7-.57l-4.08-.22-1.45-4a.79.79,0,0,0-.73-.53.77.77,0,0,0-.72.53l-1.46,4-4.08.22a.78.78,0,0,0-.7.57.86.86,0,0,0,.25.9l3.18,2.66L75.45,36a.88.88,0,0,0,.29.89.73.73,0,0,0,.88,0l3.47-2.32,3.47,2.32a.74.74,0,0,0,.88,0,.88.88,0,0,0,.29-.89l-1.11-4.1,3.18-2.66A.87.87,0,0,0,87.05,28.29Z" fill="url(#linear-gradient-13)"/>
+      <path id="Path-Copy-2" d="M57.06,12.78a.55.55,0,0,0-.5-.41l-2.91-.16-1-2.83A.56.56,0,0,0,52.09,9a.57.57,0,0,0-.52.38l-1,2.84-2.92.15a.56.56,0,0,0-.5.41.61.61,0,0,0,.18.64l2.27,1.9-.79,2.93a.61.61,0,0,0,.2.63.53.53,0,0,0,.63,0l2.48-1.66,2.48,1.66a.53.53,0,0,0,.3.09.54.54,0,0,0,.33-.12.61.61,0,0,0,.2-.63l-.79-2.93,2.27-1.9A.61.61,0,0,0,57.06,12.78Z" fill="url(#linear-gradient-14)"/>
+    </g>
+  </g>
+</svg>

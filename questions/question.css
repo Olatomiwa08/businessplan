@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.steps{
+    background: rgb(127, 127, 127);
+    background-attachment: fixed;
+    height: 100%;
+    padding: 16px;
+}
+.stepcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 20px;
+}
+.stephead p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e4ba7;
+}
+.stepcontent h1{
+    font-weight: 500;
+    font-size: clamp(24px,50%,30px);
+}
+.stepcontent p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.stepcontent img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    pointer-events: none;
+    object-fit: cover;
+    /* object-position: 0 -60px; */
+}
+input[type=file]{
+    display: none;
+}
+
+label{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #0e4ba7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    /* top: 0; */
+    right: 29%;
+    margin-top: 90px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 40px 0 20px 0;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    width: 100%;
+    background: #b8b7b7;
+    height: 1px;
+    border: none;
+    margin: 10px 0;
+}
+.inputbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.inputbox input{
+    width: 50%;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #b8b7b7;
+    padding: 12px 0;
+    outline: none;
+}
+button{
+    background-color: #0E64E6;
+    border: none;
+    display: flex;
+    border-radius: 5px;
+    padding:12px  24px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.stepcontent.two .stephead h3{
+    font-size: clamp(28px,20%,31px);
+    font-weight: 300;
+}
+.stepcontent.two .stephead p{
+    color: #9295a7;
+    font-size: clamp(16px,20%,18px);
+    font-weight: 400;
+}
+.question{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.questionbox{
+    border: 2px solid #9295a7;
+    border-radius: 8px;
+    padding: 12px;
+    width: 70%;
+}
+.questionbox h4{
+    color: #292f4d;
+    font-size: 16px;
+    font-weight: 500;
+}
+.questionbox p{
+    color: #9295a7;
+    font-size: 14px;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 20px;
+}
+.producthead h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+.productimg{
+    border: 1px solid #9295a7;
+    padding: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 30px;
+}
+.productimg img:nth-child(1){
+    width: 100%;
+    position: relative;
+    text-align: center;
+
+    
+}
+.productimg img:nth-child(2){
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.14), 0 0 3px 0 rgba(0,0,0,.12);    display: flex;
+    align-items: last baseline;
+    border-radius: 8px;
+}
