@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 8px;
+    position: relative;
+    z-index: 2000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    gap: 10px;
+}
+.pageavatar{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    border: 2px solid #d2d2d2;
+    border-radius: 50%;
+    text-align: right;
+}
+.pageavatar img{
+    width: 44px;
+    height: 44px;
+}
+.pageavatar i{
+    background-color: #0060ee;
+    position: absolute;
+    text-align: right;
+    bottom: 12px;
+    left: 40px;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 12px;
+}
+.pagename p{
+    font-size: 18px;
+    /* font-weight: 500; */
+    letter-spacing: .4;
+}
+header .coged{
+    background-color: #0060ee;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+header .cogedd{
+    background-color: #0060ee;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    background: #F5F6FA;
+    padding: 0 15px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.homehead h1{
+    font-size: 28px;
+    font-weight: 400;
+    color: #292f4d;
+}
+.homehead p{
+    color: #292f4d;
+    opacity: .5;
+    font-size: 18px;
+}
+.homegrid{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.homegridbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    transition: all .25s;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+}
+.homegridbox img{
+    height: 223px;
+}
+.boxtext{
+    padding-bottom: 20px;
+    color: #292f4d;
+}
+.boxtext h4{
+    font-weight: 500;
+    font-size: 18px;
+}
+.boxtext p{
+    opacity: .7;
+    letter-spacing: .1;
+    font-size: 15px;
+    font-weight: 400;
+}

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 8px;
+    position: relative;
+    z-index: 2000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    gap: 10px;
+}
+.pageavatar{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    border: 2px solid #d2d2d2;
+    border-radius: 50%;
+    text-align: right;
+}
+.pageavatar img{
+    width: 44px;
+    height: 44px;
+}
+.pageavatar i{
+    background-color: #0060ee;
+    position: absolute;
+    text-align: right;
+    bottom: 12px;
+    left: 40px;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 12px;
+}
+.pagename p{
+    font-size: 18px;
+    /* font-weight: 500; */
+    letter-spacing: .4;
+}
+header .coged{
+    background-color: #0060ee;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+header .cogedd{
+    background-color: #0060ee;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.profile{
+    background: #F5F6FA;
+    padding-bottom: 100px;
+    flex: 1 1 auto;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    position: relative;
+    padding-inline: 16px;
+    padding-top: 20px;
+}
+.profile .profilehead h1{
+    font-weight: 400;
+    color: #292f4d;
+    font-size: 30px;
+}
+.profile form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.profile .profilewrapper{
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+    background: #fff;
+    padding: 40px 20px;
+}
+.profilewrapper .profileid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+.profilewrapper .profilepic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* transform: translateY(-50%) translateX(-50%); */
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #f5f6f6;
+    transition: all .25s;
+    margin-bottom: 8px;
+}
+.profilepic img{
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+.profilepic svg{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #0060ee;
+    border-color: #e1e8f7;
+    color: #e1e8f7;
+    margin-bottom: 12px;
+    margin-top: 110px;
+    margin-left: 110px;
+}
+.profileid hr{
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: black;
+    opacity: .3;
+}
+.profileid h2{
+    font-size: 16px;
+    font-weight: 700;
+    opacity: .6;
+}
+.profilewrapper .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-top: 20px;
+}
+.inputs h3{
+    opacity: .6;
+    font-weight: 500;
+}
+.inputs input{
+    width: 100%;
+    outline: none;
+    opacity: 1;
+    color: #0b42b0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 8px;
+    height: 64px;
+    background-color: rgba(231, 231, 231, 0.38);
+    border:2px #0b42b0 solid;
+    padding: 38px 40px 20px 20px;
+}
+.changes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.changes button{
+    text-align: left;
+    background: none;
+    border: none;
+    color: #0060ee;
+    font-size: 16px;
+    font-weight: 500;
+}
+.changes .emailchange, .passwordchange{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.changes .emailchange .eputs,.passwordchange .passputs{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 20px;
+    display: none;
+}
+.changes .eputs input, .passputs input{
+    width: 100%;
+    outline: none;
+    opacity: 1;
+    color: #0b42b0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 8px;
+    height: 64px;
+    background-color: rgba(231, 231, 231, 0.38);
+    border:2px #0b42b0 solid;
+    padding: 38px 40px 20px 20px;
+}
+
+.profile .btns{
+    display: flex;
+    gap: 20px;
+}
+.profile .btns button{
+    padding: 18px 0;
+    width: clamp(50%,2vw,220px);
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: normal;
+    border-radius: 8px;
+    padding: 20px 0;
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: #393e47;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+    transition: all .15s ease-in-out;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.btns button:last-child{
+    background-color: #0060ee;
+    border: 1px solid #0060ee;
+    color: white;
+    font-size: 20px;
+    padding: 18px 20px;
+    font-weight: 500;
+}

@@ -11,7 +11,7 @@ header{
     align-items: center;
     height: 80px;
     background-color: #fff;
-    padding: 0 20px;
+    padding: 0 8px;
     position: relative;
     z-index: 2000;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
@@ -21,8 +21,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    color: #0b42b0;
-    gap: 20px;
+    gap: 10px;
 }
 .pageavatar{
     display: flex;
@@ -33,23 +32,34 @@ header{
     text-align: right;
 }
 .pageavatar img{
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
 }
 .pageavatar i{
-    background: #0b42b0;
+    background-color: #0060ee;
     position: absolute;
     text-align: right;
-    bottom: 11px;
-    left: 54px;
+    bottom: 12px;
+    left: 40px;
     border-radius: 8px;
     padding: 4px;
+    font-size: 12px;
 }
-.pagename h2{
-    font-size: 24px;
+.pagename p{
+    font-size: 18px;
+    /* font-weight: 500; */
+    letter-spacing: .4;
 }
 header .coged{
-    background: #0b42b0;
+    background-color: #0060ee;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+header .cogedd{
+    background-color: #0060ee;
     position: relative;
     text-align: right;
     border-radius: 8px;
@@ -65,9 +75,34 @@ header .coged{
 
 
 
+.filternav{
+    background: rgb(0, 0, 0,.5);
+    width: 100%;
+    position:fixed;
+    display: flex;
+    z-index: 300;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    display: none;
 
+}
+.filter{
+    background: rgb(0, 0, 0,.5);
+    width: 100%;
+    position:fixed;
+    display: flex;
+    z-index: 3000;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    display: none;
+}
 nav{
     width: 300px;
+    height: 100vh;
     left: 0;
     top: 0;
     position: absolute;
@@ -75,6 +110,21 @@ nav{
     background-color: #fff;
     box-shadow: 0 0 3px 0 rgba(0,0,0,.14), 6px 0 6px 0 rgba(0,0,0,.06);
     border-right: 1px solid rgba(0,0,0,.14);
+    z-index: 3000;
+}
+.logo{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: relative; */
+    /* text-align: center; */
+    background-color: #0e64e6;
+    padding: 14px;
+    width: 100%;
+}
+.logo img,svg{
+    /* border: 2px solid; */
+    width: 202px;
 }
 .details{
     display: flex;
@@ -165,8 +215,9 @@ nav{
 .menu{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 8px;
     justify-content: center;
+    margin-top: 4px;
 }
 .menu a{
     display: flex;
@@ -174,6 +225,11 @@ nav{
     text-decoration: none;
     align-items: center;
     gap: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #909399;
+    padding:16px;
+   
     /* justify-content: center; */
 }
 .menu a img,svg{
@@ -181,4 +237,108 @@ nav{
     width: 24px;
     font-weight: 900;
     stroke-width: 2px;
+}
+.menu a:first-child{
+    border-bottom: 1px solid #909090;
+}
+.menu a.active{
+    border-left:4px solid #0e64e6;
+    color: #0e64e6;
+    padding-inline: 8px;
+}
+.menu a.active svg{
+    color: #0e64e6;
+}
+.menu a:last-child{
+    border-block: 1px solid #909090;
+}
+.close{
+    background-color: #0060ee;
+        /* position: ; */
+    text-align: right;
+    border-radius: 50%;
+    padding: 8px;
+    color: #FFF;
+    font-size: 24px;   
+}
+.profile{
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12);
+    overflow: hidden;
+    width: 220px;
+    height: 100vh;
+    right: 0;
+    top: 0;
+}
+.profile .logo{
+    display: flex;
+    gap: 10px;
+}
+.profile .userprofile{
+    width: 60px;
+    height: 59px;
+}
+.profile .userprofile img{
+    width: 40px;
+}
+.profile .profileid{
+    font-size: 16px;
+}
+.profile .userid{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.userid h3{
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.userid p{
+    opacity: .5;
+    font-weight: 400;
+}
+.profile .profilesetting{
+   list-style: none;
+}
+.profilesetting li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(40, 47, 77, 0.8);
+    /* color: #909399; */
+    padding-left: 20px;
+    padding-block: 16px;
+}
+.profile li:hover{
+    background: rgba(0, 96, 238,.1);
+}
+.profile i{
+    font-size: 18px;
+}
+.profile a{
+    text-decoration: none;
+    color: rgba(40, 47, 77, 0.8);
+    font-size: 16px;
+    font-weight: 500;
+}
+.helpcenter li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(40, 47, 77, 0.8);
+    /* color: #909399; */
+    padding-left: 20px;
+    padding-block: 12px;
+}
+.helpcenter hr{
+    border: none;
+    height: 1px;
+    background: #909090;
+    opacity: .25;
 }

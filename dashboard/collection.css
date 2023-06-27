@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    padding: 0 8px;
+    position: relative;
+    z-index: 2000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    gap: 10px;
+}
+.pageavatar{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    border: 2px solid #d2d2d2;
+    border-radius: 50%;
+    text-align: right;
+}
+.pageavatar img{
+    width: 44px;
+    height: 44px;
+}
+.pageavatar i{
+    background-color: #0060ee;
+    position: absolute;
+    text-align: right;
+    bottom: 12px;
+    left: 40px;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 12px;
+}
+.pagename p{
+    font-size: 18px;
+    /* font-weight: 500; */
+    letter-spacing: .4;
+}
+header .coged{
+    background-color: #0060ee;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+header .cogedd{
+    background-color: #0060ee;
+    position: relative;
+    text-align: right;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.collection{
+    background: #F5F6FA;
+    padding-top: 40px;
+    padding: 20px;
+    background-image: url(/asset/idea-collection-background.4a307997.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    /* min-height: calc(100vh - 74px); */
+}
+.collectiontab h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.collectiontab h2::after{
+    display: block;
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #0060ee;
+}
+.collection p{
+    color: #292f4d;
+    opacity: .5;
+}
+.collection .ideas{
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+    background-color: #fff;
+    text-align: center;
+    transition: all .25s;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.ideas .ideaimage img{
+    position: relative;
+    max-height: 208px;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    border-radius: 8px 8px 0 0;
+}
+.ideas .ideamenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.ideamenu span{
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    right: 10px;
+    background-color: #ffba00;
+    border-radius: 0 100px 100px 0;
+    padding: 3px 6px;
+    z-index: 10;
+}
+.ideamenu svg{
+    width: 25px;
+    opacity: .5;
+}
+.ideas hr{
+    border: none;
+    background: #d2d2d2;
+    height: 1px;
+    position: relative;
+    bottom: 8px;
+    opacity: .5;
+}
+.ideadescription{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.ideadescription p:first-child{
+    color: black;
+    opacity: 1;
+}
+.ideadescription svg{
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #e1e8f7;
+    border-color: #e1e8f7;
+    color: #0b42b0;
+    margin-bottom: 12px;
+}
+.ideadescription .add{
+    border-bottom: 1px dotted rgba(0, 0, 0,.5);
+    
+}
+.ideainfo p{
+    font-size: 12px;
+}
+.ideainfo p:first-child{
+    color: black;
+    opacity: 1;
+}
+.createidea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid rgba(41,47,77,.25);
+    text-align: center;
+    transition: all .25s;
+    cursor: pointer;
+    padding: 1rem;
+    margin-bottom: 100px;
+}
+.createidea svg{
+    width: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #e1e8f7;
+    border-color: #e1e8f7;
+    color: #0b42b0;
+    margin-bottom: 12px;
+    opacity: .8;
+}
+.createidea p{
+    opacity: 1;
+}
+.collection button{
+    padding: 18px 0;
+    min-width: 220px;
+    max-width: 220px;
+    font-size: 17px;
+    line-height: 1.25;
+    letter-spacing: normal;
+    border-radius: 8px;
+    padding: 20px 0;
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: #393e47;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    margin-bottom: 40px;
+}
+.line{
+    border: none;
+    background: #d2d2d2;
+    height: 1px;
+    position: relative;
+    opacity: .5;
+    margin-block: 20px;
+}
