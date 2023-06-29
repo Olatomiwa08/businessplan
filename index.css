@@ -22,15 +22,23 @@
 .logo{
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     text-align: end;
 }
 .logo img{
     max-width: 50px;
+    position: relative;
+    bottom: 8px;
 }
 .logo h1{
     font-size: 24px;
     color: #0e4ba7;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .hamburger{
     display: flex;
@@ -43,11 +51,93 @@
     height: 3px;
     background: #999999;
 }
-nav{
-    display: flex;
-    justify-content: center;
+nav ul{
+    display: none;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    /* line-height: 50px; */
+    margin-right: 40px;
+    transition: all 0.4s ease-in-out ;
 }
+nav ul li{
+    list-style: none;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out ;
+}
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;justify-content: center;
+    color: rgb(8, 30, 74);
+    gap: 4px;
+}
+nav ul li a svg{
+    width: 16px;
+    stroke-width: 3px;
+    color: #999999;
+    transition: all .4s ease;
+}
+li.more{
+    transition: all .4s ease ;
+}
+li.more .morelist{
+    position: absolute;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 5px 30px 10px 20px;
+    background: rgb(230, 232, 237);
+    border-radius: 8px;
+    transition: all .4s ease ;
+    cursor: default;
+    gap: 12px;
+    margin: 0;
+    display: none;
+}
+.morelist li{
+    white-space: nowrap;
+    margin-right: 0;
+    font-size: 16px;
+    opacity: .9;
+}
+li.more:hover .morelist{
+    display: flex;
+}
+li.more:hover svg{
+    transform: rotate(180deg);
+}
+.morelist li:hover{
+    opacity: .5;
+}
+nav .logreg{
+    display: none;
+    gap: 20px;
+}
+.logreg a{
+    min-width: 150px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out 0s;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(8, 30, 74);
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(199, 204, 214) 0px 0px 0px 2px inset;
+    text-decoration: none;
+}
+.logreg a:last-child{
+    color: rgb(255, 255, 255);
+    background: rgb(14, 100, 230);
+    box-shadow: none;
+}
+
 section{
     padding: 0px 20px;
     margin: 0px auto;
@@ -64,7 +154,7 @@ section{
     gap: 30px;
 }
 .front .fronttext h1{
-    font-size: clamp(32px, 20%, 40px);
+    font-size: clamp(32px, 2vh, 40px);
     display: flex;
     flex-direction: column;
     color: #081e4a;
@@ -250,13 +340,14 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 220px;
+    /* max-width: 220px; */
+    width: clamp(220px, 20%, 300px);
     margin: 10px;
     color: rgb(8, 30, 74);
 }
 .collabox p:nth-child(2){
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(20px,2vw,30px);
     margin-bottom: 10px;
 }
 
@@ -276,14 +367,15 @@ section{
 }
 .freetrial .title{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: clamp(20px,3vw,36px);
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 90%;
 }
 .freetrial .subtitle{
     color: rgb(138, 177, 255);
-    font-size: 15px;
+    font-size: clamp(16px,2vw,20px);
 }
 .freetrial a{
     min-width: 110px;
@@ -332,8 +424,16 @@ section{
     font-weight: 400;
     font-size: 24px;
 }
+.managementgrid{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .managementbox{
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 8px;
@@ -461,7 +561,6 @@ p.Footer{
     flex-wrap: wrap;
     flex: auto;
     gap: 5px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .terms a{
     text-decoration: none;
@@ -481,7 +580,83 @@ p.last{
     font-size: 20px;
     text-align: center;
 }
+footer .menulg ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* align-items: center; */
+}
+.menulg{
+    display: none;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.menulg .foot{
+    width: 315px;
+}
+.menulg ul li{
+    list-style: none;
+}
+.menulg ul li h1{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.menulg .foot .logolg{
+    gap: 8px;
+    display: flex;
+    max-width: fit-content;
+}
+.menulg .foot .logolg img{
+    width: 50px;
+}
+.menulg .foot .logolg h1,p{
+    color: #fff;
+}
+.menulg .listlink{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+.listlink a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    opacity: .8;
+}
+footer .base{
+    display: flex;
+    flex-direction: column;
+}
+footer hr{
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
 @media (min-width:800px){
+    nav .hamburger{
+        display: none;
+    }
+    header .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: end;
+        width: 20%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav .logreg{
+        display: flex;
+    }
     main{
         padding-inline: 120px;
     }
@@ -505,5 +680,24 @@ p.last{
         width: 50%;
         /* object-fit: fill;   */
         object-position: center;      
+    }
+    .collab{
+        justify-content: space-between;
+    }
+    .managementgrid{
+        display: flex;
+    }
+    .managementgrid .managementbox{
+        max-width: 270px;
+    }
+    footer .footercontent{
+        display: none;
+    }
+    footer .menulg{
+        display: flex;
+    }
+    footer .base{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
