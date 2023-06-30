@@ -592,6 +592,9 @@ footer .menulg ul{
     /* align-items: center; */
 }
 .menulg .foot{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 315px;
 }
 .menulg ul li{
@@ -600,6 +603,7 @@ footer .menulg ul{
 .menulg ul li h1{
     color: #fff;
     margin-bottom: 30px;
+    font-size: 20px;
 }
 .menulg .foot .logolg{
     gap: 8px;
@@ -609,7 +613,10 @@ footer .menulg ul{
 .menulg .foot .logolg img{
     width: 50px;
 }
-.menulg .foot .logolg h1,p{
+.menulg .foot .logolg h1{
+    color: #fff;
+}
+.menulg .foot p{
     color: #fff;
 }
 .menulg .listlink{
@@ -620,13 +627,15 @@ footer .menulg ul{
 }
 .listlink a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
     opacity: .8;
 }
 footer .base{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 footer hr{
     border: none;
@@ -699,5 +708,15 @@ footer hr{
     footer .base{
         display: flex;
         flex-direction: row-reverse;
+    }
+    .terms{
+        display: flex;
+        width: auto;
+        margin-top: 0px;
+        padding: 0;
+        justify-content: right;
+        align-items: center;
+        text-align: right;
+        gap: 5px;
     }
 }

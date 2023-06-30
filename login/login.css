@@ -1,18 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
-body{
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .desktopquote{
+    width: 50%;
+    background: url(/asset/signup-image.63d439c3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+}
+.quotehead{
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+.quotehead img{
+    max-width: 50px;
+    position: relative;
+    bottom: 8px;
+}
+.quotehead h1{
+    font-size: 24px;
+    color: #fff;
+}
+.login{
     background: url(/asset/mountain-saturized-op5.05d9fb9a.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center ;
     background-size: cover;
-}
-.login{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,11 +139,11 @@ form input{
     outline: none;
     font-size: 15px;
 }
-/* .inputbox input:valid ~ label, */
+.inputbox input:valid ~ label,
 .inputbox input:focus ~ label{
     transform: translateX(10px) translateY(-7px);
     margin: 0;
-    /* opacity: 0; */
+    opacity: 0;
 }
 form button{
     background-color: #0E64E6;
@@ -193,4 +218,298 @@ form .log,.sign{
     color: rgba(0,0,0, .58);
     text-align: center;
     opacity: 1;
+}
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+/* body{
+    background: url(/asset/mountain-saturized-op5.05d9fb9a.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center ;
+} */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .desktopquote{
+    width: 50%;
+    background: url(/asset/signup-image.63d439c3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    display: none;
+}
+.quotehead{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: end;
+}
+.quotehead img{
+    max-width: 50px;
+    position: relative;
+    bottom: 8px;
+}
+.quotehead h1{
+    font-size: 24px;
+    color: #fff;
+}
+.login{
+    background: url(/asset/mountain-saturized-op5.05d9fb9a.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin: auto 0;
+    overflow: hidden;
+    padding: 24px 20px;
+    gap: 8px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+}
+.logo img{
+    max-width: 50px;
+    
+}
+.logo h1{
+    font-size: 24px;
+    color: #0e4ba7;
+    text-align: end;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+.login form .formcontent{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+    padding: 20px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form h1{
+    color: #292f4d;
+    font-weight: 300;
+    font-size: clamp(28px,20%,31px);
+}
+form .formcontent p.span{
+    color: #292f4d;
+    opacity: 0.38;
+    font-size: clamp(14px,2vh,24px);
+    font-weight: 400;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+.inputbox{
+    margin: 20px 0 24px 0;
+    position: relative;
+}
+label{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    margin-top: 20px;
+    transition: 0.5s;
+    pointer-events: none; 
+    font-size: 16px;
+    color:#c0c4cc ;
+    gap: 5px;
+}
+label::after{
+    content: "*";
+    color: red;
+}
+form input{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(11,66,176,.38);
+    background: #f6f8fd;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+/* form input.email:valid ~ label.email,
+form input.email:focus ~ label.email{
+    transform: translateX(10px) translateY(-7px);
+    margin: 0;
+    opacity: 0;
+}
+form input.pass:valid ~ label.pass,
+form input.pass:focus ~ label.pass{
+    transform: translateX(10px) translateY(-7px);
+    margin: 0;
+    opacity: 0;
+} */
+form button{
+    background-color: #0E64E6;
+    border: none;
+    display: flex;
+    border-radius: 5px;
+    padding:12px  24px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: clamp(16px,2.5vh,18px);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+form .terms{
+    font-size: clamp(12px,2.5vh,16px);
+    font-weight: 400;
+    color: rgba(0,0,0, .58);
+    text-align: center;
+}
+
+.or{
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    color: #292f4d;
+
+}
+.or::before{
+    content: " ";
+    display: block;
+    background: #D7DBE7;
+    height: 2px;
+    width: 140px;
+}
+.or::after{
+    content: " ";
+    display: block;
+    background: #D7DBE7;
+    height: 2px;
+    width: 140px;
+}
+.loginoptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.loginoptions a{
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
+    padding: 16px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a img{
+    width: 30px;
+}
+form .sign,.log{
+    color: rgba(0,0,0, .58);
+    text-align: center;
+    opacity: 1;
+}
+@media (min-width:800px){
+    .container .desktopquote{
+        display: block;
+    }
+    .login{
+        width: 50%;
+        background-size: 60% !important;
+        background-position: right bottom -200px;
+        margin: auto 0;
+        height: 100vh;
+    }
+    .logo{
+        display:  none;
+    }
+    .logo img{
+        max-width: 50px;
+        
+    }
+    .login form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .login form .formcontent{
+        /* max-width: 500px; */
+        align-items: flex-start;
+    }
+    form h1{
+        font-weight: 500;
+    }
+    .inputbox{
+        margin: 20px 0 24px 0;
+        position: relative;
+    }
+    form input{
+        width: 100%;
+        height: 60px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        border: 1px solid rgba(11,66,176,.38);
+        background: #f6f8fd;
+        outline: none;
+        padding: 0 10px;
+    }
+    .inputBox input{
+        width: 100%;
+        padding: 10px;
+        background: rgb(57, 57, 112);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 500px;
+        outline: none;
+        font-size: 15px;
+    }
+    a img{
+        width: 28px;
+    }
+    form .log,.sign{
+        font-size: 18px;
+        opacity: 1;
+        text-align: left;
+    }
+
 }
