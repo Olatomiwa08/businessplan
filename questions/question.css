@@ -108,13 +108,12 @@ button{
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-button a{
     color: white;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .stepcontent.two .stephead h3{
     font-size: clamp(28px,20%,31px);

@@ -85,8 +85,14 @@ header .cogedd{
     left: 0;
     top: 0;
     padding: 10px;
-    display: none;
-
+    height: 100vh;
+    /* display: none; */
+    /* transform: translateX(-200%); */
+    transition: all .4s ease-in;
+}
+.open_nav .filternav{
+    display: flex;
+    transform: translateX(0);
 }
 .filter{
     background: rgb(0, 0, 0,.5);
@@ -111,6 +117,7 @@ nav{
     box-shadow: 0 0 3px 0 rgba(0,0,0,.14), 6px 0 6px 0 rgba(0,0,0,.06);
     border-right: 1px solid rgba(0,0,0,.14);
     z-index: 3000;
+    /* display: none; */
 }
 .logo{
     /* display: flex; */
