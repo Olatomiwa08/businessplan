@@ -1,16 +1,62 @@
-let menuButton = document.querySelector('#toggle-btn');
+import home from "../dashboard/home.js";
 
-let navLinks = document.querySelectorAll('.filternav');
+let menuButton = document.querySelector('#toggle-btn');
+const navmenu = document.getElementById("nav")
+let navLinks = document.querySelectorAll('.navlink');
+let filter = document.querySelector('#menufilter');
 
 menuButton.addEventListener('click',function(){
     document.body.classList.toggle('open_nav');
-    console.log("ne")
 });
-
+filter.addEventListener('click',function(){
+    filter.classList.remove('open_nav')
+    document.body.classList.remove('open_nav');
+});
 navLinks.forEach(navlink=>{
-
-       navlink.addEventListener('click',function(){
+    navlink.addEventListener('click',function(){
+        navmenu.classList.remove("open_nav")
         document.body.classList.remove('open_nav')
-       })
+    })
 })
-let menuButtontwo = document.querySelector('#toggle-btntwo');
+window.onscroll =  () =>{
+    document.body.classList.remove("open_nav")
+    
+}
+
+
+let profileButton = document.querySelector('#toggle');
+const profilemenu = document.getElementById("profile")
+let profilefilter = document.querySelector('#profilefilter');
+
+profileButton.addEventListener('click',function(){
+    document.body.classList.toggle('show_nav');
+});
+profilefilter.addEventListener('click',function(){
+    profilefilter.classList.remove('show_nav')
+    document.body.classList.remove('show_nav');
+});
+navLinks.forEach(navlink=>{
+    navlink.addEventListener('click',function(){
+        profilemenu.classList.remove("show_nav")
+        document.body.classList.remove('show_nav')
+    })
+})
+const actives = document.querySelectorAll(".remove")
+
+actives.forEach(active => {
+    active.addEventListener('click',function(){
+        actives.forEach(act => {act.classList.remove('active')})
+        // document.querySelector('.active').classList.remove('active')
+        this.classList.add("active")
+    })
+})
+
+
+// document.getElementById("tothis").innerHTML = home ; 
+
+function plan(){
+    document.getElementById("plan").addEventListener("click",function(){
+        document.getElementById("tothis").innerHTML = home ;
+    })
+}
+plan()

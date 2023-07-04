@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -87,24 +90,12 @@ header .cogedd{
     padding: 10px;
     height: 100vh;
     /* display: none; */
-    /* transform: translateX(-200%); */
+    transform: translateX(-200%);
     transition: all .4s ease-in;
 }
-.open_nav .filternav{
+.open_nav .filternav  {
     display: flex;
     transform: translateX(0);
-}
-.filter{
-    background: rgb(0, 0, 0,.5);
-    width: 100%;
-    position:fixed;
-    display: flex;
-    z-index: 3000;
-    height: 100%;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    display: none;
 }
 nav{
     width: 300px;
@@ -112,12 +103,17 @@ nav{
     left: 0;
     top: 0;
     position: absolute;
-    max-width: 240px;
+    min-width: 240px;
+    width: 40%;
     background-color: #fff;
     box-shadow: 0 0 3px 0 rgba(0,0,0,.14), 6px 0 6px 0 rgba(0,0,0,.06);
     border-right: 1px solid rgba(0,0,0,.14);
     z-index: 3000;
-    /* display: none; */
+    transition: transform .4s ease-out;
+    transform: translateX(-100%);
+}
+.open_nav nav{
+    transform: translateX(0);
 }
 .logo{
     /* display: flex; */
@@ -268,6 +264,25 @@ nav{
     color: #FFF;
     font-size: 24px;   
 }
+
+.filter{
+    background: rgb(0, 0, 0,.5);
+    width: 100%;
+    position:fixed;
+    display: flex;
+    z-index: 300;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    transition: transform .4s ease-in;
+    transform: translateX(200%);
+    /* display: none; */
+}
+.show_nav .filter  {
+    display: flex;
+    transform: translateX(0);
+}
 .profile{
     position: absolute;
     background-color: #fff;
@@ -275,10 +290,18 @@ nav{
     flex-direction: column;
     box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12);
     overflow: hidden;
-    width: 220px;
+    min-width: 220px;
+    width: 40%;
     height: 100vh;
     right: 0;
     top: 0;
+    z-index: 3000;
+    transition: transform .4s ease-out;
+    transform: translateX(200%);
+}
+.show_nav .profile{
+   transform: translateX(0);
+
 }
 .profile .logo{
     display: flex;
