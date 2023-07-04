@@ -5,11 +5,18 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+body{
+    height: 100%;
+    overflow-x: hidden;
+}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
  header{
     display: flex;
@@ -44,16 +51,63 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 .hamburger span{
     display: block;
     width: 30px;
     height: 3px;
     background: #999999;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+.open_nav .hamburger span:nth-child(1){
+    transform: rotate(135deg);
+    top: 10px;
+    width: 35px;
+    height: 3.2px;
+}
+.open_nav .hamburger span:nth-child(2){
+    transform: rotate(0deg);
+    transform: translateX(100%);
+    opacity: 0;
+}
+.open_nav .hamburger span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 8px;
+    width: 35px;
+    height: 3.2px;
+}
+nav .menufilter{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 3000;
+    transition: transform .4s ease-in;
+    transform: translateX(200%);
+    margin: auto;
+}
+.open_nav .menufilter{
+    transform: translateX(0);
+}
+nav .menuwrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff ;
+    padding: 48px 36px;
+    position: relative;
+    bottom: 1.6px;
+    margin: auto;
+    /* text-align: left; */
 }
 nav ul{
-    display: none;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     gap: 20px;
     position: relative;
@@ -62,12 +116,18 @@ nav ul{
     /* line-height: 50px; */
     margin-right: 40px;
     transition: all 0.4s ease-in-out ;
+    width: 100%;
+    padding-bottom: 20px;
+
 }
 nav ul li{
     list-style: none;
     margin-right: 40px;
     cursor: pointer;
     transition: all 0.2s ease-in-out ;
+    border-top: 1px solid #999999;
+    width: 100%;
+    padding: 4px 0;
 }
 nav ul li a{
     text-decoration: none;
@@ -75,6 +135,8 @@ nav ul li a{
     align-items: center;justify-content: center;
     color: rgb(8, 30, 74);
     gap: 4px;
+    text-align: left;
+    justify-content: space-between;
 }
 nav ul li a svg{
     width: 16px;
@@ -85,37 +147,41 @@ nav ul li a svg{
 li.more{
     transition: all .4s ease ;
 }
-li.more .morelist{
-    position: absolute;
+.more .morelist{
+    position: relative;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    padding: 5px 30px 10px 20px;
-    background: rgb(230, 232, 237);
-    border-radius: 8px;
     transition: all .4s ease ;
     cursor: default;
     gap: 12px;
     margin: 0;
     display: none;
+    padding: 12px 8px;
 }
 .morelist li{
     white-space: nowrap;
     margin-right: 0;
     font-size: 16px;
     opacity: .9;
+    border: none;
 }
-li.more:hover .morelist{
+.more .morelist.show{
     display: flex;
 }
-li.more:hover svg{
+/* li.more:hover .morelist{
+    display: flex;
+} */
+/* li.more:hover svg{
     transform: rotate(180deg);
-}
-.morelist li:hover{
+} */
+/* .morelist li:hover{
     opacity: .5;
-}
+} */
 nav .logreg{
-    display: none;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 .logreg a{
@@ -209,6 +275,7 @@ section{
     opacity: 0.38;
     font-size: 12px;
     padding: 0;
+    z-index: 0;
 }
 .front img{
     width: 100%;
@@ -449,6 +516,16 @@ section{
     justify-content: center;
     align-items: center;
 }
+.users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 50px; */
+    flex-wrap: wrap;
+}
+.users .usertext{
+    width: 50%;
+}
 .users .usertext p:nth-child(1){
     color: #384ec1;
     font-size: 48px;
@@ -519,10 +596,23 @@ footer{
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 15px 0px;
+}
+.menulist .btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+.menulist .morelist a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    opacity: .8    
 }
 .menulist svg{
     width: 20px;
@@ -660,11 +750,72 @@ footer hr{
         gap: 20px;
         width: 80%;
     }
+    nav .menufilter{
+        background: none;
+        position: relative;
+        transition: transform .4s ease-in;
+        transform: translateX(0);
+        top: 0;
+    }
+    nav .menuwrapper{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 0;
+        bottom: 0;
+    }
     nav ul{
         display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 20px;
+        padding: 0;
+    }
+    nav ul li{
+        border: none;
+    }
+    nav ul li a{
+        justify-content: center;
+        color: rgb(8, 30, 74);
+        gap: 4px;
+    }
+    li.more{
+        transition: all .4s ease ;
+    }
+    li.more .morelist{
+        position: absolute;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        padding: 5px 30px 10px 20px;
+        background: rgb(230, 232, 237);
+        border-radius: 8px;
+        transition: all .4s ease ;
+        cursor: default;
+        gap: 12px;
+        margin: 0;
+        display: none;
+    }
+    .morelist li{
+        white-space: nowrap;
+        margin-right: 0;
+        font-size: 16px;
+        opacity: .9;
+    }
+    li.more:hover .morelist{
+        display: flex;
+    }
+    li.more:hover svg{
+        transform: rotate(180deg);
+    }
+    .morelist li:hover{
+        opacity: .5;
     }
     nav .logreg{
         display: flex;
+        flex-direction: row;
     }
     main{
         padding-inline: 120px;
@@ -698,6 +849,20 @@ footer hr{
     }
     .managementgrid .managementbox{
         max-width: 270px;
+    }
+    .users{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .users .usertext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
     }
     footer .footercontent{
         display: none;

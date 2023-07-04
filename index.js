@@ -29,18 +29,50 @@
 let menuButton = document.querySelector('#toggle-btn');
 
 let navLinks = document.querySelectorAll('.navlink');
+let filter = document.querySelector('.menufilter');
 
 menuButton.addEventListener('click',function(){
     document.body.classList.toggle('open_nav');
 });
-
 navLinks.forEach(navlink=>{
-
-       navlink.addEventListener('click',function(){
+    navlink.addEventListener('click',function(){
         document.body.classList.remove('open_nav')
-       })
+    })
 })
 window.onscroll =  () =>{
     document.body.classList.remove("open_nav")
     
 }
+
+// const btn = document.getElementById('btn');
+// const dropdown = document.getElementById('dropdown');
+// const arrow = document.getElementById('arrow');
+
+
+// const togglearrow = function(){
+//   dropdown.classList.toggle('show');
+//   arrow.classList.toggle('arrow');
+// };
+
+// btn.addEventListener('click', function(e){
+//   e.stopPropagation();
+//   togglearrow();
+// });
+
+// document.body.addEventListener('click',function(){
+//   if(dropdown.classList.contains('show')){
+//     togglearrow()
+//   }
+// })
+
+const btns = document.querySelectorAll('.btn');
+const morelists = document.querySelectorAll('.morelist');
+
+btns.forEach(btn=>{
+    btn.addEventListener('click', function(e){
+        btn.classList.toggle("show")
+        morelists.forEach(morelist=>{
+           morelist.classList.toggle('show'); 
+        })
+    });
+})

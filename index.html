@@ -16,56 +16,60 @@
                 <h1>Let'splan</h1>
             </div>
             <nav>
-                <div class="hamburger">
+                <div class="hamburger bar" id="toggle-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <ul id="menu">
-                    <li class="more"><a href="#">
-                        <p>Product</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>                          
-                    </a>
-                    <ul class="morelist">
-                        <li>Idea Plan</li>
-                        <li>Business Guide</li>
-                        <li>Idea Validation</li>
-                        <li>Financial Plan</li>
-                        <li>Business Plan</li>
-                    </ul>
-                    </li>
-                    <li><a href="#">
-                        <p>Pricing</p>
-                    </a></li>
-                    <li class="more"><a href="#">
-                        <p>Solutions</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>                          
-                    </a>
-                    <ul class="morelist">
-                        <li>Entrepreneurs & Startups</li>
-                        <li>Incubators & Accelerators</li>
-                        <li>Business Schools</li>
-                    </ul>
-                    </li>
-                    <li class="more"><a href="#">
-                        <p>More</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                        </svg>                          
-                    </a>
-                    <ul class="morelist">
-                        <li>Blog</li>
-                        <li>Help Center</li>
-                    </ul>
-                    </li>
-                </ul>
-                <div class="logreg">
-                    <a href="/login/login.html">Log in</a>
-                    <a href="/signup/signup.html">Try for free</a>
+                <div class="menufilter">
+                    <div class="menuwrapper">
+                        <ul id="menu">
+                            <li class="more btn"><a href="#">
+                                <p>Product</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                          
+                            </a>
+                            <ul class="morelist">
+                                <li>Idea Plan</li>
+                                <li>Business Guide</li>
+                                <li>Idea Validation</li>
+                                <li>Financial Plan</li>
+                                <li>Business Plan</li>
+                            </ul>
+                            </li>
+                            <li><a href="#">
+                                <p>Pricing</p>
+                            </a></li>
+                            <li class="more btn"><a href="#">
+                                <p>Solutions</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                          
+                            </a>
+                            <ul class="morelist">
+                                <li>Entrepreneurs & Startups</li>
+                                <li>Incubators & Accelerators</li>
+                                <li>Business Schools</li>
+                            </ul>
+                            </li>
+                            <li class="more btn"><a href="#">
+                                <p>More</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>                          
+                            </a>
+                            <ul class="morelist ">
+                                <li>Blog</li>
+                                <li>Help Center</li>
+                            </ul>
+                            </li>
+                        </ul>
+                        <div class="logreg">
+                            <a href="/login/login.html">Log in</a>
+                            <a href="/signup/signup.html">Try for free</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -227,24 +231,54 @@
             </div>
             <p class="Footer">Innovative business planning software for entrepreneurs, startups and business organizations</p>
             <div class="menu">
-                <div class="menulist">
-                    <p>Product</p>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
+                <div class="menulist more">
+                    <div class="btn">
+                        <p>Product</p>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
+                    </div>
+                    <ul class="morelist">
+                        <a href="#">Idea Plan </a>
+                        <a href="#">Business Guide</a>
+                        <a href="#">Idea Validation</a>
+                        <a href="#">Financial Plan</a>
+                        <a href="#">Business Plan</a>
+                    </ul>
                 </div>
-                <div class="menulist">
-                    <p>Solutions</p>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
+                <div class="menulist more">
+                    <div class="btn">
+                        <p>Solutions</p>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
+                    </div>
+                    <ul class="morelist">
+                        <a href="#">Entrepreneurs & Startups </a>
+                        <a href="#">Incubators & Accelerators</a>
+                        <a href="#">Business Schools</a>
+                    </ul>
                 </div>
-                <div class="menulist">
-                    <p>Company</p>
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
+                <div class="menulist more">
+                    <div class="btn">
+                        <p>Company</p>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
+                    </div>
+                    <ul class="morelist">
+                        <a href="#">About Us </a>
+                        <a href="#">Affiliate Program</a>
+                        <a href="#">Write For Us</a>
+                        <a href="#">Contact Us</a>
+                    </ul>
                 </div>
-                <div class="menulist">
-                    <p>Resources</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                      </svg>
-                      
+                <div class="menulist more">
+                    <div class="btn">
+                        <p>Resources</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                      <ul class="morelist">
+                        <a href="#">Help Center </a>
+                        <a href="#">IdeaBuddy Blog</a>
+                        <a href="#">Liveplan Alternative</a>
+                    </ul>
                 </div>
             </div>
             <div class="follow">
