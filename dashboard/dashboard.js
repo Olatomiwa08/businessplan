@@ -1,4 +1,5 @@
 import home from "../dashboard/home.js";
+import businessplan from "../dashboard/businessplan.js";
 
 let menuButton = document.querySelector('#toggle-btn');
 const navmenu = document.getElementById("nav")
@@ -20,7 +21,6 @@ navLinks.forEach(navlink=>{
 })
 window.onscroll =  () =>{
     document.body.classList.remove("open_nav")
-    
 }
 
 
@@ -41,6 +41,10 @@ navLinks.forEach(navlink=>{
         document.body.classList.remove('show_nav')
     })
 })
+// window.onscroll =  () =>{
+//     document.body.classList.remove("show_nav")
+// }
+
 const actives = document.querySelectorAll(".remove")
 
 actives.forEach(active => {
@@ -51,12 +55,18 @@ actives.forEach(active => {
     })
 })
 
+// document.getElementById("tothis").innerHTML += businessplan;
+// document.getElementById("tothis").innerHTML += ;
 
-// document.getElementById("tothis").innerHTML = home ; 
-
-function plan(){
-    document.getElementById("plan").addEventListener("click",function(){
-        document.getElementById("tothis").innerHTML = home ;
+$(document).ready(function(){
+    // $("body").load(function(){
+    //   alert("Image loaded.");
+      $('main').append(home)
+    // });
+    $("#plan").click(function(){
+        $("#tothis").replaceWith(businessplan)
     })
-}
-plan()
+  });
+  $(document).ready(function(){
+  });
+  console.log(businessplan)

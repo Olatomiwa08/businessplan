@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="quu">ww</div>
+    <button>mr</button>
+    <p>r</p>
+    <!-- <div onclick="addBook('+quote+', \''+quote.book+'\')">'+quote+'</div> -->
+    <script>
+        
+    var quote =  "The GodFather";
+
+$(document).ready(function(){
+    $("#quu").click(function(){
+        $(document).ready(function(){
+             $("p").append("<b>Appended text</b>");
+        })
+//  
+});
+//   $('#quu').append(quote);
+
+});
+$("button").click(function(){
+  $("p").append("<b>Appended text</b>");
+});
+
+function addBook(user_id, name) {
+   console.log(name);
+   console.log(user_id);
+}
+
+
+
+
+
+</script>
+</body>
+</html>
