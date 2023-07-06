@@ -1,5 +1,6 @@
 import home from "../dashboard/home.js";
 import businessplan from "../dashboard/businessplan.js";
+import collection from "../dashboard/collection.js";
 
 let menuButton = document.querySelector('#toggle-btn');
 const navmenu = document.getElementById("nav")
@@ -59,14 +60,11 @@ actives.forEach(active => {
 // document.getElementById("tothis").innerHTML += ;
 
 $(document).ready(function(){
-    // $("body").load(function(){
-    //   alert("Image loaded.");
-      $('main').append(home)
-    // });
+
     $("#plan").click(function(){
-        $("#tothis").replaceWith(businessplan)
+        // $("#tothis").attr("/dashboard/home.html")
+        $("#tothis").load("/dashboard/home.html");
+        // window.location = "/dashboard/home.html"
     })
   });
-  $(document).ready(function(){
-  });
-  console.log(businessplan)
+//   console.log(businessplan)

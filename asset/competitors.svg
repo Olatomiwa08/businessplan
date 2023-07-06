@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[desktop]One-page-plan---empty" transform="translate(-320.000000, -497.000000)" fill="#3E474F">
+            <g id="content" transform="translate(310.000000, 274.000000)">
+                <g id="tasks" transform="translate(0.000000, 43.000000)">
+                    <g id="Group-8-Copy-4" transform="translate(0.000000, 170.000000)">
+                        <g id="Group-2" transform="translate(10.000000, 10.000000)">
+                            <path d="M14,10 C12.895,10 12,10.895 12,12 L12,26 C12,27.105 12.895,28 14,28 L24,28 C25.105,28 26,27.105 26,26 L26,12 C26,10.895 25.105,10 24,10 L14,10 Z M14,12 L24,12 L24,26 L14,26 L14,12 Z M8,13 L8,25 L10,25 L10,13 L8,13 Z M28,13 L28,25 L30,25 L30,13 L28,13 Z M19,15 C17.895,15 17,15.895 17,17 C17,18.105 17.895,19 19,19 C20.105,19 21,18.105 21,17 C21,15.895 20.105,15 19,15 Z M19,21 C17.665,21 15,21.67 15,23 L15,24 L23,24 L23,23 C23,21.67 20.335,21 19,21 Z"
+                                  id="Shape" fill-rule="nonzero" opacity="0.5"></path>
+                            <rect id="Rectangle" opacity="0.05" x="0" y="0" width="38" height="38" rx="4"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

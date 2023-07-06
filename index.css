@@ -277,14 +277,23 @@ section{
     padding: 0;
     z-index: 0;
 }
+.front .heroimg{
+    background: url(/asset/mountain-bc130d0172f09b3239fd4400dd4e8e9a.png);
+    width: 100%;
+    padding: 50px;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 .front img{
     width: 100%;
     border-radius: 20px;
-    border: 3px solid #0E64E6;
-    padding: 5px;
+    border: 8px solid #04142e;
+    padding: 2px;
 }
 .front  img:hover {
-    box-shadow: 0 0 9px 1px #0E64E6;
+    box-shadow: 0 0 4px 1px #0E64E6;
 }
 .help{
     display: flex;

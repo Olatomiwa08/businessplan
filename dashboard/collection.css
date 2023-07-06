@@ -218,7 +218,6 @@ header .cogedd{
     background-color: #fff;
     color: #393e47;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.14), 0 0 2px 0 rgba(0,0,0,.12);
-    -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
     margin-bottom: 40px;
 }
