@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <div class="wrapper ">
+        <header class="logo">
+            <img src="/asset/logo.jpeg" alt="">
+            <h3>Let'sPlan</h3>
+        </header>
+        <div class="overview ">
+            <form action="/questions/summary.html" class="shadow-sm p-3 mb-5 bg-white rounded">
+                <div class="overviewhead border-bottom">
+                    <h3 class="text-2xl font-medium  leading-6 text-gray-900">Relevant Market Size </h3>
+                    <p>Your relevant market size is the annual revenue your company could attain if it owned 100% market share. Answer the two questions below and we will calculate it for you.</p>
+                </div>
+                <div class="content">
+                    <div class="col-md-12">
+                        <label for="inputText1" class="form-label">Enter the number of customers who might be interested in purchasing your products and/or services each year?</label>
+                        <div class="input-group mb-3">
+                            <input type="text" id="inputText1" name="Customers2" id="Customers2" value="100000" placeholder="Please enter a number" class="form-control" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" aria-label="Amount (to the nearest dollar)" x-mask:dynamic="$money($input)">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputText1" class="form-label">Enter the monetary amount these customers might be willing to spend, on an annual basis, on your products and/or services?</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" id="inputText1" class="form-control" placeholder="Please enter a dollar amount" aria-label="Amount (to the nearest dollar)">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputText1" class="form-label">Your relevant market size is as follows:</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" id="inputText1" class="form-control" aria-label="Amount (to the nearest dollar)" value="0" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns border-top pt-4">
+                    <button>Back to Business Plans</button>
+                    <button>Save & Next</button>
+                </div>
+            </form>     
+        </div>
+       </div> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/questions/question.js"></script>
+</body>
+</html>
