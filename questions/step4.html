@@ -9,8 +9,43 @@
     <link rel="stylesheet" href="question.css">
 </head>
 <body>
-    <div class="steps">
+    <!-- <embed src="/questions/step1.html" type="application/pdf"> -->
+    <div class="steps" id="steps" >
 
     </div>
+    <script>
+        let steps = document.getElementById("steps")
+        steps.innerHTML = `<h2>${localStorage.getItem("CompanyName")}</h2>
+         <p>${localStorage.getItem("FullName")}</p> 
+         <p>${localStorage.getItem("Title")}</p> 
+         <p>${localStorage.getItem("Address")}</p> 
+         <p>${localStorage.getItem("city")},${localStorage.getItem("state")} ${localStorage.getItem("Zip")}</p> <br>
+         <p>${localStorage.getItem("Email")}</p>
+        <br>
+        <br>
+        <br>
+        <br>
+         <div>
+            <h3>${localStorage.getItem("CompanyName")}</h3>
+            <p>
+                Congratulations on completing the first draft of your business plan!<br>
+                <br>
+Below please find a preview of your plan so far.<br>
+<br>
+The preview also includes (highlighted in yellow) additional business plan sections to which you will
+gain immediate access once you register for PlanBuildr.<br>
+<br>
+Once you register, you will be able to quickly and easily create these new sections and finish your
+business plan.<br>
+<br>
+The work you have completed on your business plan already puts you ahead of 90% of your
+current and/or potential competitors.<br>
+<br>
+Once you register for PlanBuildr, and complete the final sections of your business plan, you will be
+99% ahead of others and your chances of success will skyrocket!
+            </p>
+         </div>
+        `
+    </script>
 </body>
 </html>

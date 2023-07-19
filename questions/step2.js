@@ -11,6 +11,9 @@ formcontrols.forEach(formcontrol =>{
     };
 // resul.innerHTML = x.value
 })  
+var x = localStorage.getItem("CompanyName")
+console.log(x)
+
 
 
 // x.value = localStorage.getItem("key"); // get and assign the value outside 
