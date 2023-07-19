@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.content{
+    display: flex;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    gap: 10px;
+}
+.content hr{
+    background: rgb(0, 0, 0);
+    width: 1px;
+    border: none;
+    margin: 0;
+}
+.content .definition,.explanation{
+    /* padding: 20px; */
+    width: 50%;
+}
+.content p.head{
+    background-color: rgb(30 41 59);
+    color: rgb(255 255 255);
+    min-height: 75px;
+    padding: 1.25rem;
+    text-align: center;
+    min-width: 50%;
+    width: 100%;
+}
+.explanation .textbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.show{
+    display: none;
+}
+textarea{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    min-height: 80px;
+    outline: none;
+    padding: 16px;
+}

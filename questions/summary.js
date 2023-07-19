@@ -1,7 +1,8 @@
 let BusinessOverview = document.getElementById("BusinessOverview")
-BusinessOverview.onchange = function(){
-    // const formName = formcontrol.name
-    const formKey = BusinessOverview.value;
-    // localStorage.setItem(formName, formKey);
-    localStorage.setItem('key', formKey);
-};
+let result = document.getElementById("result")
+BusinessOverview.innerHTML = localStorage.getItem("keys");
+function store(){
+    const keys = BusinessOverview.value;
+    localStorage.setItem('keys', keys);
+    console.log("me")
+}

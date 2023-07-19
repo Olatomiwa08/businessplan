@@ -15,16 +15,17 @@
             <h3>Let'sPlan</h3>
         </header>
         <div class="overview ">
-            <form action="#" class="shadow-sm p-3 mb-5 bg-white rounded">
+            <form action="/questions/target.html" class="shadow-sm p-3 mb-5 bg-white rounded">
                 <div class="overviewhead border-bottom">
                     <h3 class="text-2xl font-medium  leading-6 text-gray-900"> Business Overview </h3>
                     <p>Your Business Overview section goes here</p>
                 </div>
                 <div class="content">
-                    <textarea name="BusinessOverview" id="BusinessOverview" rows="15" @input.debounce="setContentData(BPID)" class="block w-full w-100 rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">[Company Name] __________________ (write what you do such as helps, provides, sells, manufactures, etc.) __________________ (write what you offer such as food, services, software, etc.) to __________________  (write who your customers are such as teenagers, new parents, business managers) with the following benefits __________________ (write your benefits, e.g., faster, more reliable, lower cost).
+                    <textarea name="BusinessOverview" id="BusinessOverview" onchange="store()" rows="15" @input.debounce="setContentData(BPID)" class="block w-full w-100 rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">[Company Name] __________________ (write what you do such as helps, provides, sells, manufactures, etc.) __________________ (write what you offer such as food, services, software, etc.) to __________________  (write who your customers are such as teenagers, new parents, business managers) with the following benefits __________________ (write your benefits, e.g., faster, more reliable, lower cost).
 
 For example: Jones Pastry Shop sells freshly baked good to local residents in and around Springfield. We are unique because we have amazing tasting products in a convenient location at reasonable prices.
                     </textarea>
+                    <div id="result"></div>
                 </div>
                 <div class="btns border-top pt-4">
                     <button>Back to Business Plans</button>

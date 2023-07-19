@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
+    <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="target.css">
+</head>
+<body>
+    <div class="wrapper ">
+        <header class="logo">
+            <img src="/asset/logo.jpeg" alt="">
+            <h3>Let'sPlan</h3>
+        </header>
+        <div class="overview ">
+            <form action="/questions/summary.html" class="shadow-sm p-3 mb-5 bg-white rounded">
+                <div class="overviewhead border-bottom">
+                    <h3 class="text-2xl font-medium  leading-6 text-gray-900"> Target Customers</h3>
+                    <p>Below are several demographic (e.g., age) and psychographic (e.g., values) variables to describe your target customers.</p>
+                </div>
+                <div class="content">
+                   <div class="definition">
+                        <p class="head one">Check the box next to each area that defines your target customers.</p>
+                        <div class="checks">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Age" id="flexCheckAge">
+                                <label class="form-check-label" for="flexCheckAge">
+                                    Age
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Income" id="flexCheckIncome">
+                                <label class="form-check-label" for="flexCheckIncome">
+                                  Income
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Gender" id="flexCheckGender">
+                                <label class="form-check-label" for="flexCheckGender">
+                                 Gender
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Location" id="flexCheckLocation">
+                                <label class="form-check-label" for="flexCheckLocation">
+                                Location
+                                </label>
+                            </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Marital Status" id="flexCheckMaritalStatus">
+                                <label class="form-check-label" for="flexCheckMaritalStatus">
+                                Marital Status
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Occupation" id="flexCheckOccupation">
+                                <label class="form-check-label" for="flexCheckOccupation">
+                                    Occupation
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Language" id="flexCheckLanguage">
+                                <label class="form-check-label" for="flexCheckLanguage">
+                                    Language
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Education" id="flexCheckEducation">
+                                <label class="form-check-label" for="flexCheckEducation">
+                                    Education
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Values / Beliefs" id="flexCheckValues">
+                                <label class="form-check-label" for="flexCheckValues">
+                                    Values / Beliefs
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Activities" id="flexCheckActivities">
+                                <label class="form-check-label" for="flexCheckActivities">
+                                    Activities
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Business Size" id="flexCheckBusinessSize">
+                                <label class="form-check-label" for="flexCheckBusinessSize">
+                                    Business Size
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Other" id="flexCheckOther">
+                                <label class="form-check-label" for="flexCheckOther">
+                                    Other
+                                </label>
+                              </div>
+                        </div>
+                   </div>
+                   <hr>
+                   <div class="explanation" id="explanation">
+                        <p class="head">Briefly explain the characteristics of your target customers.</p>
+                   </div>
+                </div>
+                <div class="btns border-top pt-4">
+                    <button>Back to Business Plans</button>
+                    <button>Save & Next</button>
+                </div>
+            </form>     
+        </div>
+       </div> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/questions/target.js"></script>
+</body>
+</html>
