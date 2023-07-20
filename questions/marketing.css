@@ -1,0 +1,91 @@
+/* .wrapper{
+    height: 100%;
+} */
+.addbutton{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.addbutton button{
+    padding: .5rem 1rem;
+    border-radius: 0.375rem;
+    background: rgb(79 70 229);
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addbutton button svg{
+    width: 1.2rem;
+    padding: 4px;
+    color: rgb(79 70 229);
+    background: white;
+    border-radius: 50%;
+    stroke-width: 3px;
+}
+.addbutton p{
+    margin-top: 8px;
+    padding: 0;
+    align-self: center;
+}
+.content-accordion{
+    /* margin-top: 35px;
+    margin-right: 50px; */
+}
+.question-answer{
+    width: 100%;
+    border-radius: 8px;
+    padding: 4px 12px ;
+    box-shadow:  0 0 #0000, 0 0 #0000, 0 2px 3px 0 #0000001a,0 1px 5px -1px #0000001a;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.title-question{
+    margin: 1.4rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+}
+.title-question:empty::before {
+    color: grey;
+}
+.title-question[data-placeholder]:not([data-placeholder=""]):empty::before {
+    content: attr(data-placeholder);
+}
+/* .title-question:empty::before {
+    content: 'fallback placeholder';
+} */
+.spans{
+    width: 1.5rem;
+    cursor: pointer;
+    transition: all 1s ;
+}
+.spans svg{
+    stroke-width: 2.1px;
+    color: black;
+}
+.remove{
+    display: none;
+}
+.answer{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    display: none;
+    transition: all 4s;
+}
+.show-text .answer{
+    display: block;
+    transition: all .4s;
+}
+.show-text .remove{
+    display: inline;
+    transition: all .4s ;
+}
+.show-text .add{
+    display: none;
+    transition: all .4s ;
+}

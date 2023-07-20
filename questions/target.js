@@ -7,6 +7,7 @@ formcheckinputs.forEach(function(formcheckinput){
         let div = document.createElement("div") 
         div.setAttribute("class","textbox")
         let text = document.createElement("textarea")
+        text.t
         let label =  document.createElement("label")
         label.textContent = formcheckinput.value
         let set = text.textContent
@@ -23,7 +24,8 @@ formcheckinputs.forEach(function(formcheckinput){
         text.onchange = function (){
             localStorage.setItem("set", set)
             // console.log("me")
-            console.log(label.textContent)
+            test.textContent = "ff"
+            console.log(text.textContent)
         }
     })
 })

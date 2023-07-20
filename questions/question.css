@@ -217,14 +217,17 @@
     border-radius: 50%;
 }
 .overview{
+    padding-top: 70px;
     width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 0;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     bottom: 0;
+    gap: 40px;
+    /* overflow-y: scroll; */
 }
 .overview form{
     display: flex;
@@ -395,4 +398,41 @@ fieldset p,.overviewhead p{
 }
 .coverinfo input{
     font-size: .8rem;
+}
+
+
+
+
+.tabspy{
+    background: white;
+    border-color: rgb(226 232 240);
+    filter: drop-shadow(0 10px 8px #0000000a) drop-shadow(0 4px 3px #0000001a);
+    padding: 1rem;
+    width: 320px;
+}
+.tabspy nav{
+    display: flex;
+    flex-direction: column;
+}
+.tabspy nav a{
+    color: rgb(100 116 139);
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.tabspy nav a svg{
+    width: 1.5rem;
+    color: rgb(100 116 139);
+}
+progress {
+    background-color: #f3f3f3;
+    border: 0;
+    border-radius: 9px;
+    height: 18px;
+    width: 83.333333%;
+    vertical-align: initial;
 }
