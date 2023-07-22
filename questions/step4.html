@@ -13,7 +13,33 @@
     <div class="steps" id="steps" >
 
     </div>
+    <br><br>
+    <div id="test">
+        <button id="btn" onclick="myFunction">test</button>
+    </div>
     <script>
+
+        let btn = document.getElementById("btn")
+        let test = document.getElementById('test')
+        btn.onclick = (myFunction)=>{
+            $("#test").append("mw")
+            localStorage.setItem("wasPageRefreshed" , true)
+
+            if(localStorage.getItem("wasPageRefreshed")){
+    myFunction()
+}
+        }
+        // let btn = `<button>CLICK ME</button`
+
+    // function myFunction(){
+    //     $("body").append("mwg")
+    // // localStorage.setItem("wasPageRefreshed" , true)
+    // }
+
+// if(localStorage.getItem("wasPageRefreshed")){
+//     myFunction()
+// }
+
         let steps = document.getElementById("steps")
         steps.innerHTML = `<h2>${localStorage.getItem("CompanyName")}</h2>
          <p>${localStorage.getItem("FullName")}</p> 
@@ -47,5 +73,6 @@ Once you register for PlanBuildr, and complete the final sections of your busine
          </div>
         `
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </body>
 </html>
