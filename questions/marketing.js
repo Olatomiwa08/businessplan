@@ -37,8 +37,37 @@ let contentaccordion = ` <div class="content-accordion">
     </div>
 </div>
 </div>  ` + "<br>"
-createproductinput.addEventListener("click",(e)=>{
-    e.preventDefault()
+// createproductinput.addEventListener("click",(e)=>{
+//     e.preventDefault()
+//     appendcontent.innerHTML += contentaccordion
+//     const questions = document.querySelectorAll('.question-answer');
+//     questions.forEach(function(question) {
+//         const btn = question.querySelector('.question');
+//         btn.addEventListener("click", function() {
+//             questions.forEach(function(item){
+//                 if(item !== question) [
+//                     item.classList.remove("show-text")
+//                 ]
+//             })
+//             question.classList.toggle("show-text");
+//         })
+//     })
+
+
+//     let titlequestion = document.querySelector(".title-question")
+//     let ProductName = document.getElementById("product")
+//     titlequestion.innerHTML = "#" + localStorage.getItem("ProductName")
+//     ProductName.oninput = function(){
+//         titlequestion.innerHTML = "#" + ProductName.value
+//        let settitlequestion = ProductName.value
+//         localStorage.setItem("ProductName", settitlequestion)
+//     }
+//     // titlequestion.append
+// })
+
+createproductinput.addEventListener("click", myfunc)
+function myfunc(){
+    // e.preventDefault()
     appendcontent.innerHTML += contentaccordion
     const questions = document.querySelectorAll('.question-answer');
     questions.forEach(function(question) {
@@ -60,8 +89,11 @@ createproductinput.addEventListener("click",(e)=>{
        let settitlequestion = ProductName.value
         localStorage.setItem("ProductName", settitlequestion)
     }
-    // titlequestion.append
-})
+    localStorage.setItem("wasPageRefreshed" , true)
+}
+if(localStorage.getItem("wasPageRefreshed")){
+    myfunc()
+}
 
 
 

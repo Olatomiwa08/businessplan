@@ -29,6 +29,47 @@ formcheckinputs.forEach(function(formcheckinput){
         }
     })
 })
-// console.log(test)
 
-// let mycheck = document.querySelectorAll("")
+
+// formcheckinputs.forEach(function(formcheckinput){
+//     formcheckinput.addEventListener("click", myfunction);
+//     function myfunction(){
+//         let div = document.createElement("div") 
+//         div.setAttribute("class","textbox")
+//         let text = document.createElement("textarea")
+//         text.t
+//         let label =  document.createElement("label")
+//         label.textContent = formcheckinput.value
+//         let set = text.textContent
+//         // localStorage.setItem("set",set.textContent)
+//         div.append(label)
+//         div.append(text)
+//         explanation.append(div)
+//         if (formcheckinput.checked == true) {
+//             div.classList.remove("show")
+//         }
+//         else{
+//             div.classList.add("show")
+//         }
+//         text.onchange = function (){
+//             localStorage.setItem("set", set)
+//             // console.log("me")
+//             test.textContent = "ff"
+//             console.log(text.textContent)
+//         }
+//         localStorage.setItem("PageRefreshed" , true)
+//     }
+//     // if(localStorage.getItem("PageRefreshed")){
+//     //     myfunction()
+//     // }
+// })
+
+formcheckinputs.forEach(function(formcheckinput){
+    formcheckinput.addEventListener("un ", myfunction);
+    function myfunction(){
+       
+    }
+    // if(localStorage.getItem("PageRefreshed")){
+    //     myfunction()
+    // }
+})
