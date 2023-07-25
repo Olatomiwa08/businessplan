@@ -136,6 +136,9 @@ label::after{
     content: "*";
     color: red;
 }
+label.check::after{
+    content: "";
+}
 .emailfield,.passwordfield{
     width: 100%;
     display: flex;
