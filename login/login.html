@@ -29,20 +29,29 @@
                 <img src="/asset/logo.jpeg" alt="">
                 <h1>Let'splan</h1>
             </div>
-            <form action="/dashboard/dashboard.html">
+            <form action="/dashboard/dashboard.html" id="form" onsubmit="return(validate())">
                 <div class="formcontent">
                     <h1> Log in </h1>
                     <p class="span">Enter your details below</p>
     
                     <div class="inputbox">
-                        <label for="email" class="email">Email</label>
-                        <input type="email"pattern="[^ @]*@[^ @]*" class="email" name="email" id="" required>
-                        <label for="password">Enter Password</label>
-                        <input type="password" name="password" id="" required>
+                        <div class="emailfield">
+                            <input type="email"pattern="[^ @]*@[^ @]*"  name="email" id="email" required>
+                            <label for="email" class="email">Email</label>
+                        </div>
+                       <div class="passwordfield">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password" class="password">Enter Password</label>
+                            <p id="incorrectpassword"></p>
+                       </div>
+                       <div class="checkfield">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Show password</label>
+                       </div>
                     </div>
                     <p class="log">Don't have an account? <a href="/signup/signup.html">Sign up</a><br><a href="/forgotpassword/forgot.html">Forgot password?</a></p>
                 </div>
-                <button>Log In</button>
+                <button id="log">Log In</button>
                 <div class="or"><p>or</p></div>
                 <p class="sign">Log in by using</p>
                 <div class="loginoptions">
@@ -53,5 +62,6 @@
             </form>
         </div>
     </div>
+    <script src="/login/login.js"></script>
 </body>
 </html>

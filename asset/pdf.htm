@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <!-- <embed src="/questions/step1.html" type="application/pdf"> -->
+    <div class="steps" id="steps" >
+        <a href="/questions/print.html" download="pdf"> download</a>
+    </div>
+    <br><br>
+    <!-- <div id="test">
+        <a href="/questions/print.html" download="pdf"></a>
+    </div> -->
+    <script>
+
+        let btn = document.getElementById("btn")
+        let test = document.getElementById('test')
+        btn.onclick = (myFunction)=>{
+            $("#test").append("mw")
+            localStorage.setItem("wasPageRefreshed" , true)
+
+            if(localStorage.getItem("wasPageRefreshed")){
+    myFunction()
+}
+        }
+        // let btn = `<button>CLICK ME</button`
+
+    // function myFunction(){
+    //     $("body").append("mwg")
+    // // localStorage.setItem("wasPageRefreshed" , true)
+    // }
+
+// if(localStorage.getItem("wasPageRefreshed")){
+//     myFunction()
+// }
+
+        let steps = document.getElementById("steps")
+        steps.innerHTML = `<h2>${localStorage.getItem("CompanyName")}</h2>
+         <p>${localStorage.getItem("FullName")}</p> 
+         <p>${localStorage.getItem("Title")}</p> 
+         <p>${localStorage.getItem("Address")}</p> 
+         <p>${localStorage.getItem("city")},${localStorage.getItem("state")} ${localStorage.getItem("Zip")}</p> <br>
+         <p>${localStorage.getItem("Email")}</p>
+        <br>
+        <br>
+        <br>
+        <br>
+         <div>
+            <h3>${localStorage.getItem("CompanyName")}</h3>
+            <p>
+                Congratulations on completing the first draft of your business plan!<br>
+                <br>
+Below please find a preview of your plan so far.<br>
+<br>
+The preview also includes (highlighted in yellow) additional business plan sections to which you will
+gain immediate access once you register for PlanBuildr.<br>
+<br>
+Once you register, you will be able to quickly and easily create these new sections and finish your
+business plan.<br>
+<br>
+The work you have completed on your business plan already puts you ahead of 90% of your
+current and/or potential competitors.<br>
+<br>
+Once you register for PlanBuildr, and complete the final sections of your business plan, you will be
+99% ahead of others and your chances of success will skyrocket!
+            </p>
+         </div>
+        `
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

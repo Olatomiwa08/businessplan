@@ -112,6 +112,8 @@ form .formcontent p.span{
 .inputbox{
     margin: 20px 0 24px 0;
     position: relative;
+    width: 100%;
+    padding: 0 10px;
 }
 label{
     position: absolute;
@@ -119,16 +121,29 @@ label{
     justify-content: center;
     align-items: center;
     left: 5%;
-    margin-top: 20px;
     transition: 0.5s;
     pointer-events: none; 
     font-size: 16px;
+    font-weight: 600;
     color:#c0c4cc ;
     gap: 5px;
+}
+label.email{
+    top: 20px;
+}
+label.password{
+    top: 20px;
 }
 label::after{
     content: "*";
     color: red;
+}
+.emailfield,.passwordfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 form input{
     width: 100%;
@@ -139,20 +154,20 @@ form input{
     background: #f6f8fd;
     outline: none;
     padding: 0 10px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,.5);
 }
-/* form input.email:valid ~ label.email,
-form input.email:focus ~ label.email{
-    transform: translateX(10px) translateY(-7px);
-    margin: 0;
-    opacity: 0;
-}
-form input.pass:valid ~ label.pass,
-form input.pass:focus ~ label.pass{
-    transform: translateX(10px) translateY(-7px);
-    margin: 0;
-    opacity: 0;
-} */
+#email:focus ~ label,
+#email:valid ~ label{
+    transform: translateX(10px) translateY(-28px);
+    background: #f6f8fd;
+} 
+#password:focus ~ label,
+#password:valid ~ label{
+    transform: translateX(10px) translateY(-28px);
+    background: #f6f8fd;
+} 
 form button{
     background-color: #0E64E6;
     border: none;
@@ -168,6 +183,25 @@ form button{
     font-size: clamp(16px,2.5vh,18px);
     text-transform: uppercase;
     cursor: pointer;
+}
+.checkfield{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.checkfield input{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+.checkfield label{
+    position: relative;
+    margin: 0;
+    left: 8px;
+}
+#incorrectpassword{
+    color: red;
+
 }
 form .terms{
     font-size: clamp(12px,2.5vh,16px);

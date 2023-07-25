@@ -1,6 +1,6 @@
-import home from "../dashboard/home.js";
-import businessplan from "../dashboard/businessplan.js";
-import collection from "../dashboard/collection.js";
+// import home from "../dashboard/home.js";
+// import businessplan from "../dashboard/businessplan.js";
+// import collection from "../dashboard/collection.js";
 
 let menuButton = document.querySelector('#toggle-btn');
 const navmenu = document.getElementById("nav")

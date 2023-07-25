@@ -29,16 +29,24 @@
                 <img src="/asset/logo.jpeg" alt="">
                 <h1>Let'splan</h1>
             </div>
-            <form action="/questions/question.html">
+            <form action="/questions/step1.html">
                 <div class="formcontent">
                     <h1> Create your IdeaBuddy account </h1>
                     <p class="span">Try free for 15 days, no credit card required</p>
     
                     <div class="inputbox">
-                        <label for="email" class="email">Email</label>
-                        <input type="email"pattern="[^ @]*@[^ @]*" class="email" name="email" id="" required>
-                        <label for="password" class="pass">Password</label>
-                        <input type="password" name="password" class="pass" id="" required>
+                        <div class="emailfield">
+                            <input type="email"pattern="[^ @]*@[^ @]*"  name="email" id="email" required>
+                            <label for="email" class="email">Email</label>
+                        </div>
+                       <div class="passwordfield">
+                            <input type="password" name="password" id="password" required>
+                            <label for="password" class="password">Enter Password</label>
+                       </div>
+                       <div class="checkfield">
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">Show password</label>
+                   </div>
                     </div>
                 </div>
                 <button>Start My free trial</button>
@@ -56,5 +64,6 @@
             </form>
         </div>
     </div>
+    <script src="/signup/signup.js"></script>
 </body>
 </html>
