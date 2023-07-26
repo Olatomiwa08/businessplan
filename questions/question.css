@@ -345,7 +345,7 @@ fieldset p,.overviewhead p{
     display: none;
 }
 .funding label{
-    width: 130px;
+    max-width: 130px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    font-size: 20px;
+    box-shadow: 1px 0 2px 3px rgb(0,0,0,.1);
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    padding: 12px 20px;
+}
+.contenthead{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.contenthead h1{
+    font-size: 40px;
+    white-space: nowrap;
+}
+.contenthead button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(37 99 235);
+}
+.content .start{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: .5;
+}
+#plan{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    color: black;
+}
+#plan:hover{
+    background: rgb(100, 116, 139,.1);
+}
+#plan h1{
+    font-weight: 400;
+    text-align: center;
+    opacity: .2;
+    margin-top: 30px;
+}
+a .datecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 20px; */
+}
+.plancontainer{
+    /* display: flex; */
+    flex-direction: column;
+    background: transparent;
+}
+.planinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(100 116 139);
+    font-size: .9rem;
+}
+.infodescription{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.plancontainer svg{
+    width: 30px;
+    color: rgb(148 163 184);
+}
+/* . */

@@ -62,7 +62,7 @@
                     </a>
                 </nav>
             </div>
-            <form action="/dashboard/dashboard.html" class="shadow-sm p-3 mb-5 bg-white rounded">
+            <form action="/logindirectorypage/logindirectory.html" class="shadow-sm p-3 mb-5 bg-white rounded">
                 <div class="overviewhead border-bottom">
                     <h3 class="text-2xl font-medium  leading-6 text-gray-900">Management Team Members</h3>
                     <p>For each key person on your current team, including yourself, complete the information below.</p>
@@ -80,12 +80,13 @@
                 </div>
                 <div class="btns border-top pt-4">
                     <button>Back</button>
-                    <button>Move to Dashboard</button>
+                    <button onclick="move()">Move to Dashboard</button>
                 </div>
             </form>     
         </div>
        </div> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/questions/marketing.js"></script>
+        <script type="module" src="/questions/team.js"></script>
 </body>
 </html>

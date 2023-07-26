@@ -4,9 +4,14 @@ let login = document.getElementById("log")
 let form = document.getElementById("form")
 let check = document.getElementById("check")
 let incorrectpassword = document.getElementById("incorrectpassword")
+email.onchange = function(){
+    if(email.value !== localStorage.getItem("saveMyemail")){
+        alert("me")
+    }
+}
 password.onchange = function(){
     if(password.value !== localStorage.getItem("savepassword")){
-        incorrectpassword.append("Please enter a correct password")
+        incorrectpassword.innerHTML = "Please enter a correct password"
     }else{
         incorrectpassword.style.display = "none"
     }
@@ -21,8 +26,8 @@ password.onchange = function(){
 //     return false
 // })
 function validate(){
-    if(password !== localStorage.getItem("savepassword")){
-        // alert("Incorrect password, Please enter a correct password")
+    if(password.value !== localStorage.getItem("savepassword")){
+        alert("Incorrect password, Please enter a correct password")
         return false
     }
     
