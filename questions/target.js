@@ -77,9 +77,9 @@ const tabspy = document.querySelector(".tabspy")
 const bar = document.querySelector(".bar")
 bar.addEventListener("click", function(){
     tabspy.classList.toggle("span")
-    console.log("me")
+    bar.classList.toggle("check")
 })
-
+document.body.classList.remove("span")
 function Back(){
     window.location.href="industry.html"
 }

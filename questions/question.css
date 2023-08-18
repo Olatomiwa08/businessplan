@@ -205,6 +205,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     padding: 20px;
+    overflow: hidden;
 }
 .wrapper header{
     display: flex;
@@ -220,6 +221,7 @@
     height: 3px;
     display: block;
     position: relative;
+    transition: all .4s ease;
     /* gap: 20px; */
 }
 .bar span::before{
@@ -230,6 +232,7 @@
     width: 30px;
     height: 3px;
     top: 6px;
+    transition: all .4s ease;
 }
 .bar span::after{
     content: "";
@@ -239,6 +242,27 @@
     width: 30px;
     height: 3px;
     top: 10px;
+    transition: all .4s ease;
+}
+.check span{
+    transform: rotate(135deg);
+    top: 12px;
+    width: 35px;
+    /* opacity: 0; */
+}
+.check span::before{
+    transform: rotate(-85deg);
+    position: relative;
+    top: -2px;
+    width: 35px;
+    /* opacity: ; */
+}
+.check span::after{
+    transform: rotate(45deg);
+    top: -4px;
+    width: 35px;
+    transform: translateX(100px);
+    opacity: 0;
 }
 .wrapper .logo{
     width: 50%;
@@ -465,6 +489,7 @@ fieldset p,.overviewhead p{
     z-index: 3000;
     height: 100vh;
 }
+
 .tabspy nav{
     display: flex;
     flex-direction: column;
