@@ -45,5 +45,5 @@ bar.addEventListener("click", function(){
 })
 
 function Back(){
-    window.location.href=".html"
+    window.location.href="/logindirectorypage/logindirectory.html"
 }
