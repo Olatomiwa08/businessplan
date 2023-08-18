@@ -6,7 +6,7 @@ let check = document.getElementById("check")
 let incorrectpassword = document.getElementById("incorrectpassword")
 email.onchange = function(){
     if(email.value !== localStorage.getItem("saveMyemail")){
-        alert("me")
+        alert("email not correct")
     }
 }
 password.onchange = function(){
