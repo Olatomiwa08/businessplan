@@ -66,13 +66,28 @@ window.onscroll =  () =>{
 // })
 
 const btns = document.querySelectorAll('.btn');
-const morelists = document.querySelectorAll('.morelist');
+const morelists = document.querySelector('.activelist');
 
 btns.forEach(btn=>{
-    btn.addEventListener('click', function(e){
-        btn.classList.toggle("show")
-        morelists.forEach(morelist=>{
-           morelist.classList.toggle('show'); 
-        })
-    });
+    btn.addEventListener("click", ()=>{
+        morelists.classList.toggle("me")
+        console.log(morelists)
+    })
 })
+
+// btns.forEach(btn=>{
+//     btn.addEventListener('click', function(e){
+//         e.stopPropagation()
+//         btn.classList.toggle("show")
+//         // morelists.forEach(morelist=>{
+//         //    morelist.classList.toggle('activelist'); 
+//         // })
+//         morelists.classList.remove("active")
+//         morelists.classList.add("active")
+//         // morelists.forEach(morelist => {
+//         //     morelist.classList.add('activelist')
+//         //     // this.classList.add("active")
+//         // })
+//         // document.querySelector('.active').classList.remove('active')
+//     });
+// })

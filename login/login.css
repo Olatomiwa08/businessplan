@@ -25,18 +25,42 @@
     background-repeat: no-repeat;
     height: 100vh;
     background-position: top;
+    justify-content:first baseline;
+    /* align-items: center; */
+    padding: 40px 20px;
     display: none;
+}
+.desktopquote .quote{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    gap: 20px;
+}
+.quote p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.quotetext p{
+    font-size: 40px;
 }
 .quotehead{
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
     text-align: end;
+    height: 50%;
 }
 .quotehead img{
     max-width: 50px;
+    max-height: 50px;
     position: relative;
     bottom: 8px;
+    border-radius: 50%;
+
 }
 .quotehead h1{
     font-size: 24px;
@@ -144,50 +168,8 @@ label::after{
     flex-direction: column;
     justify-content: center;
     position: relative;
-}@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:wght@300;400;500;700;800;900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
 }
-/* body{
-    background: url(/asset/mountain-saturized-op5.05d9fb9a.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center ;
-} */
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-}
-.container .desktopquote{
-    width: 50%;
-    background: url(/asset/signup-image.63d439c3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-position: top;
-    display: none;
-}
-.quotehead{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    text-align: end;
-}
-.quotehead img{
-    max-width: 50px;
-    position: relative;
-    bottom: 8px;
-}
-.quotehead h1{
-    font-size: 24px;
-    color: #fff;
-}
+
 .login{
     background: url(/asset/mountain-saturized-op5.05d9fb9a.png);
     background-repeat: no-repeat;
@@ -411,7 +393,9 @@ form .sign,.log{
 }
 @media (min-width:800px){
     .container .desktopquote{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
     .login{
         width: 50%;

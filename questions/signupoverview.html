@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="/questions/question.css">
+    <link rel="stylesheet" href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/questions/signupoverview.css">
+</head>
+<body>
+   <div class="wrapper ">
+    <header class="logo">
+        <img src="/asset/logo.jpeg" alt="">
+        <h3>Let'sPlan</h3>
+    </header>
+    <div class="overview ">
+        <form action="/questions/step2.html" class="shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="overviewhead ">
+                <h3 class=""> START YOUR PLAN HERE </h3>
+            </div>
+            <fieldset>
+                <legend class="contents text-base font-medium text-gray-900">Is this a new or existing company?</legend>
+                <p class="text-sm text-gray-500">Choose if your company is newly incorporated or an existing one.</p>
+                <div class="radios">
+                    <div class="neworexisting form-check">
+                        <!-- <input id="NewOrExistingNew" name="NewOrExisting" type="radio" value="New" checked="checked"> -->
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            New Company
+                          </label>
+                        <!-- <label for="NewOrExistingNew">New Company</label> -->
+                    </div>
+                    <div class="neworexisting">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                        <!-- <input id="NewOrExistingExisting" name="NewOrExisting" type="radio" value="Existing" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"> -->
+                        <!-- <label for="NewOrExistingExisting">Existing Company</label> -->
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Existing Company
+                          </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="selectoption">
+                <label id="listbox-label" class="block text-base font-medium text-gray-900">In what industry do you operate?</label>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Select Industry</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li class="active">Select Industry</li>
+                        <li>Arts & Entertainment</li>
+                        <li>Automotive</li>
+                        <li>Bar & Nightclub</li>
+                        <li>Beauty/Hair Salon &amp; Day Spa</li>
+                        <li>Business Service</li>
+                        <li>Construction & Engineering</li>
+                        <li>Consultant</li>
+                        <li>Consumer Service</li>
+                        <li>Day Care Service & Children's Product</li>
+                        <li>Education & Training</li>
+                        <li>Farm & Food Production</li>
+                        <li>Fashion/D&#233;cor</li>
+                        <li>Finance/Insurance</li>
+                        <li>Fitness & Sport</li>
+                        <li>Hotel & Bed and Breakfast</li>
+                        <li>Information Technology</li>
+                        <li>Manufacturing</li>
+                        <li>Medical and Health Care</li>
+                        <li>Non Profit</li>
+                        <li>Pet Services & Pet Supplies</li>
+                        <li>Real Estate</li>
+                        <li>Retail or Online Store</li>
+                        <li>Resturant, Cafe & Bakery</li>
+                        <li>Transportation</li>
+                        <li>Wedding &amp; Event Planning</li>
+                        <li>Wholesale and Distributor</li>
+                        <li>others</li>
+                    </ul>
+                </div>
+            </div>
+            <fieldset class="border-bottom">
+                <legend>Will you be seeking funding for your business plan?</legend>
+                <div class="fundingoption">
+                    <div class="funding yes" id="showhowmuch">
+                        <input type="radio" name="radio" id="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="funding delete">
+                        <input type="radio" name="radio" id="no">
+                        <label for="no">No</label>
+                    </div>
+                    <div class="funding delete">
+                        <input type="radio" name="radio" id="notsure">
+                        <label for="notsure">Not Sure</label>
+                    </div>
+                </div>
+                <div class="howmuch " id="howmuch">
+                    <h2>How much funding are you seeking</h2>
+                    <select name="" id="">
+                        <option value="">Please Selct</option>
+                        <option value="">Less than $50,000</option>
+                        <option value="">$50,000 to $249,000</option>
+                        <option value="">$249,000 to $999,999</option>
+                        <option value="">$1 million to $1,999,999</option>
+                        <option value="">over $2 million</option>
+                    </select>
+                </div>
+            </fieldset>
+            <!-- <hr> -->
+            <div class="btns">
+                <button>Back to Business Plans</button>
+                <button>Save & Next</button>
+            </div>
+        </form>     
+    </div>
+   </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/questions/step1.js"></script>
+</body>
+</html>

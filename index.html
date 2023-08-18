@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
+    <div class="containers">
         <header>
-            <div class="logo">
+            <a href="index.html" class="logo" >
                 <img src="asset/logo.jpeg" alt="">
                 <h1>Let'splan</h1>
-            </div>
+            </a>
             <nav>
                 <div class="hamburger bar" id="toggle-btn">
                     <span></span>
@@ -23,48 +24,53 @@
                 </div>
                 <div class="menufilter">
                     <div class="menuwrapper">
-                        <ul id="menu">
-                            <li class="more btn"><a href="#">
+                        <div class="btn-group">
+                            <button class="btn d-flex justify-content-between align-items-center border-0 border-top" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <p>Product</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>                          
-                            </a>
-                            <ul class="morelist">
-                                <li>Idea Plan</li>
-                                <li>Business Guide</li>
-                                <li>Idea Validation</li>
-                                <li>Financial Plan</li>
-                                <li>Business Plan</li>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu border-0">
+                                <li><a href="#" class="dropdown-item">Idea Plan</a></li>
+                                <li><a href="#" class="dropdown-item">Business Guide</a></li>
+                                <li><a href="#" class="dropdown-item">Idea Validation</a></li>
+                                <li><a href="#" class="dropdown-item">Financial Plan</a></li>
+                                <li><a href="#" class="dropdown-item">Business Plan</a></li>
                             </ul>
+                        </div>
+                        <ul>
+                            <li class="border-top">
+                                <a href="#">
+                                    <p>Pricing</p>
+                                </a>
                             </li>
-                            <li><a href="#">
-                                <p>Pricing</p>
-                            </a></li>
-                            <li class="more btn"><a href="#">
+                        </ul>
+                        <div class="btn-group">
+                            <button class="btn d-flex justify-content-between align-items-center border-0 border-top" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <p>Solutions</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>                          
-                            </a>
-                            <ul class="morelist">
-                                <li>Entrepreneurs & Startups</li>
-                                <li>Incubators & Accelerators</li>
-                                <li>Business Schools</li>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu border-0">
+                                <li><a href="#" class="dropdown-item">Entrepreneurs & Startups</a></li>
+                                <li><a href="#" class="dropdown-item">Incubators & Accelerators</a></li>
+                                <li><a href="#" class="dropdown-item">Business Schools</a></li>
                             </ul>
-                            </li>
-                            <li class="more btn"><a href="#">
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn d-flex justify-content-between align-items-center border-0 border-top" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <p>More</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                </svg>                          
-                            </a>
-                            <ul class="morelist ">
-                                <li>Blog</li>
-                                <li>Help Center</li>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu border-0">
+                                <li><a href="#" class="dropdown-item">Blog</a></li>
+                                <li><a href="#" class="dropdown-item">Help Center</a></li>
                             </ul>
-                            </li>
-                        </ul>
+                        </div>
                         <div class="logreg">
                             <a href="/login/login.html">Log in</a>
                             <a href="/signup/signup.html">Try for free</a>
@@ -86,54 +92,11 @@
                         </h1>
                         <p>Design a business model. Develop and test your idea. Make financial projections. Build a business plan.
                         </p>
-                        <button> <a href="/signup/signup.html">Start your free trial</a></button>
-                        <p class="text">Try for 15 days. No credit card required.</p>
+                        <button> <a href="/signup/signup.html">Start for free</a></button>
+                        <!-- <p class="text">Try for 15 days. No credit card required.</p> -->
                     </div>
                     <div class="heroimg">
                         <img src="/asset/original-5678e6ea7aa1e190b9285caf6597b54e.webp"  alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="help">
-                <div class="helptext">
-                    <p class="cavet">How IdeaBuddy can help you?</p>
-                    <h2>You can develop, test and launch your business idea, all in one place</h2>
-                    <p>Whether you are starting from scratch, looking for funding, or wanting to expand, we meet you where you're at. 👇</p>
-                </div>
-                <div class="tab">
-                    <img src="/asset/idea-planIcon.svg" class="active" alt="">
-                    <img src="/asset/whiteboardIcon.svg" alt="">
-                    <img src="/asset/business-guideIcon.svg" alt="">
-                    <img src="/asset/financial-planIcon.svg" alt="">
-                    <img src="/asset/idea-validationIcon.svg" alt="">
-                    <img src="/asset/business-planIcon.svg" alt="">
-                </div>
-                <div class="plan">
-                    <h2>Idea plan</h2>
-                    <div class="planbox">
-                        <video src="/asset/idea-planVideoMp4.mp4" type="video/mp4" autoplay loop></video>
-                        <div class="planboxtext">
-                            <p class="tabTitle">Design a business model on a single page</p>
-                            <p class="tabDescription">
-                                If your idea is in its early stages, and you need to quickly visualize and structure your business model, Idea Plan is the ideal starting point for you.
-                            </p>
-                            <div class="tick">
-                                <img src="/asset/idea-planBulletIcon.svg" alt="">
-                                <p>Use editable templates</p>
-                            </div>
-                            <div class="tick">
-                                <img src="/asset/idea-planBulletIcon.svg" alt="">
-                                <p>Collaborate with others</p>
-                            </div>
-                            <div class="tick">
-                                <img src="/asset/idea-planBulletIcon.svg" alt="">
-                                <p>Share and export to PDf or Word</p>
-                            </div>
-                            <div class="link">
-                                <a href="#">More about Plan</a>
-                                <img src="/asset/download.svg" alt="">
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -156,7 +119,7 @@
             </section>
             <section class="trial">
                 <div class="freetrial">
-                    <p class="title">Start your 15-day free trial</p>
+                    <p class="title">Start for free today</p>
                     <p class="subtitle">You provide the idea, and we will help you take it to the next level</p>
                     <a href="/signup/signup.html" >Try for free</a>
                 </div>
@@ -218,9 +181,9 @@
                     <p>Sign up to begin your business journey with an experienced buddy. Ready when you are.</p>
                 </div>
                 <div class="start">
-                    <button> <a href="/signup/signup.html">Start your free trial</a>
+                    <button> <a href="/signup/signup.html">Start Now</a>
                     </button>
-                        <p class="text">Try for 15 days. No credit card required.</p>
+                        <!-- <p class="text">Try for 15 days. No credit card required.</p> -->
                 </div>
             </section>
         </main>
@@ -233,53 +196,51 @@
             </div>
             <p class="Footer">Innovative business planning software for entrepreneurs, startups and business organizations</p>
             <div class="menu">
-                <div class="menulist more">
-                    <div class="btn">
+                <div class="btn-group">
+                    <button class="btn d-flex justify-content-between align-items-center border-0 border-top" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <p>Product</p>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
-                    </div>
-                    <ul class="morelist">
-                        <a href="#">Idea Plan </a>
-                        <a href="#">Business Guide</a>
-                        <a href="#">Idea Validation</a>
-                        <a href="#">Financial Plan</a>
-                        <a href="#">Business Plan</a>
-                    </ul>
-                </div>
-                <div class="menulist more">
-                    <div class="btn">
-                        <p>Solutions</p>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
-                    </div>
-                    <ul class="morelist">
-                        <a href="#">Entrepreneurs & Startups </a>
-                        <a href="#">Incubators & Accelerators</a>
-                        <a href="#">Business Schools</a>
-                    </ul>
-                </div>
-                <div class="menulist more">
-                    <div class="btn">
-                        <p>Company</p>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xIDFMNiA2TDExIDEiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==" alt="angle">
-                    </div>
-                    <ul class="morelist">
-                        <a href="#">About Us </a>
-                        <a href="#">Affiliate Program</a>
-                        <a href="#">Write For Us</a>
-                        <a href="#">Contact Us</a>
-                    </ul>
-                </div>
-                <div class="menulist more">
-                    <div class="btn">
-                        <p>Resources</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                         </svg>
-                    </div>
-                      <ul class="morelist">
-                        <a href="#">Help Center </a>
-                        <a href="#">IdeaBuddy Blog</a>
-                        <a href="#">Liveplan Alternative</a>
+                    </button>
+                    <ul class="dropdown-menu border-0">
+                        <li><a href="#" class="dropdown-item">Idea Plan</a></li>
+                        <li><a href="#" class="dropdown-item">Business Guide</a></li>
+                        <li><a href="#" class="dropdown-item">Idea Validation</a></li>
+                        <li><a href="#" class="dropdown-item">Financial Plan</a></li>
+                        <li><a href="#" class="dropdown-item">Business Plan</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li class="border-top">
+                        <a href="#">
+                            <p>Pricing</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn-group">
+                    <button class="btn d-flex justify-content-between align-items-center border-0 border-top" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>Solutions</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu border-0">
+                        <li><a href="#" class="dropdown-item">Entrepreneurs & Startups</a></li>
+                        <li><a href="#" class="dropdown-item">Incubators & Accelerators</a></li>
+                        <li><a href="#" class="dropdown-item">Business Schools</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn d-flex justify-content-between align-items-center border-0 border-top" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>More</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu border-0">
+                        <li><a href="#" class="dropdown-item">Blog</a></li>
+                        <li><a href="#" class="dropdown-item">Help Center</a></li>
                     </ul>
                 </div>
             </div>
@@ -288,9 +249,9 @@
                     Follow us
                 </h2>
                 <div class="sos">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
                 </div>
             </div>
            </div>
@@ -362,5 +323,6 @@
         </footer>
     </div>
     <script src="index.js"></script>
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

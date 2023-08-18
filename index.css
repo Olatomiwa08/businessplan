@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+p{
+    margin: 0;
+    padding: 0;
+}
 body{
     height: 100%;
     overflow-x: hidden;
@@ -25,6 +29,9 @@ body{
     width: 100%;
     padding: 12px 24px;
     box-shadow: 0 4px 5px -2px rgba(0,0,0,.3);
+}
+a{
+    text-decoration: none;
 }
 .logo{
     display: flex;
@@ -98,7 +105,7 @@ nav .menuwrapper{
     flex-direction: column;
     width: 100%;
     background: #fff ;
-    padding: 48px 36px;
+    padding: 20px 36px;
     position: relative;
     bottom: 1.6px;
     margin: auto;
@@ -113,32 +120,60 @@ nav ul{
     position: relative;
     font-size: 18px;
     font-weight: 500;
-    /* line-height: 50px; */
     margin-right: 40px;
-    transition: all 0.4s ease-in-out ;
     width: 100%;
-    padding-bottom: 20px;
-
+    margin: 0;
+    padding: 0;
 }
 nav ul li{
     list-style: none;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     cursor: pointer;
     transition: all 0.2s ease-in-out ;
     border-top: 1px solid #999999;
     width: 100%;
     padding: 4px 0;
+    margin: 0;
+    padding: 8px 0;
 }
 nav ul li a{
     text-decoration: none;
     display: flex;
-    align-items: center;justify-content: center;
+    align-items: center;
+    justify-content: center;
     color: rgb(8, 30, 74);
     gap: 4px;
     text-align: left;
     justify-content: space-between;
 }
+.btn-group{
+    position: relative;
+}
+.btn-group .dropdown-menu{
+    margin-top: -804px;
+    position: relative;
+}
 nav ul li a svg{
+    width: 16px;
+    stroke-width: 3px;
+    color: #999999;
+    transition: all .4s ease;
+}
+.btn-group button{
+    margin: 0;
+    padding: 8px 0;    
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    border-top: 1px solid #999999;
+    border-radius: 0;
+    outline: none;
+}
+.btn-group p{
+    margin: 0;
+    padding: 0;
+}
+.btn-group svg{
     width: 16px;
     stroke-width: 3px;
     color: #999999;
@@ -166,7 +201,13 @@ li.more{
     opacity: .9;
     border: none;
 }
-.more .morelist.show{
+.more .activelist{
+    display: none;
+}
+/* .more .activelist{
+    display: flex;
+} */
+.me .activelist{
     display: flex;
 }
 /* li.more:hover .morelist{
@@ -231,6 +272,9 @@ section{
     align-items: center;
     gap: 2px;
 }
+button{
+    cursor: pointer;
+}
 .fronttext{
     display: flex;
     flex-direction: column;
@@ -238,15 +282,21 @@ section{
     align-items: center;
     gap: 12px;
 }
-.line{
+.fronttext h1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+h1 .line{
     width: max-content;
     box-sizing: border-box;
     background: url(/svg)  center bottom / contain no-repeat;
     color: rgb(8, 30, 74);
     display: block;
-    height: 50px;
-    margin: 0px auto;
+    height: 40px;
     padding: 0px 5px;
+    align-items: center;
+    justify-content: center;
 }
 .fronttext p{
     font-size: 16px;
@@ -261,13 +311,13 @@ section{
     border: none;
     display: flex;
     border-radius: 5px;
-    padding:12px  24px;
 }
 .fronttext button a{
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
+    padding:12px  24px;
 }
 .fronttext .text{
     color: rgb(8, 30, 74);
@@ -577,7 +627,6 @@ section{
     border: none;
     display: flex;
     border-radius: 5px;
-    padding:12px  24px;
 }
 .start button a{
     color: white;
@@ -585,6 +634,7 @@ section{
     font-weight: 600;
     font-size: 20px;
     text-align: center;
+    padding:12px  24px;
 }
 .start .text{
     color: rgb(8, 30, 74);
@@ -597,9 +647,30 @@ footer{
     width: 100%;
     background: rgb(8, 30, 74);
     padding: 50px 30px;
-    gap: 30px;
+    gap:0;
     display: flex;
     flex-direction: column;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    list-style: none;   
+}
+.menu p{
+    color: white;
+}
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    padding: 8px 0;
+}
+.menu .dropdown-menu{
+    width: 100%;
+    position: relative;
 }
 .menu .menulist{
     width: 100%;
@@ -616,6 +687,7 @@ footer{
     justify-content: space-between;
     width: 100%;
     cursor: pointer;
+    color: #fff;
 }
 .menulist .morelist a{
     text-decoration: none;
@@ -638,16 +710,28 @@ p.Footer{
 .follow{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 4px;
 }
 .follow h2{
     color: #fff;
+    font-size: 24px;
+}
+.sos{
+    display: flex;
+    gap: 4px;
+
+}
+.sos a{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
 }
 .sos i{
     font-size: 24px;
     color: #f5f7f9;
     opacity: .8;
     margin-right: 20px;
+
 }
 .terms{
     display: flex;
@@ -735,9 +819,13 @@ footer .base{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 footer hr{
     border: none;
+    padding: 0;
+    margin: 0;
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -783,7 +871,13 @@ footer hr{
         padding: 0;
     }
     nav ul li{
-        border: none;
+        border: none !important;
+    }
+    .menuwrapper ul li{
+        border-top: 0 !important;
+    }
+    .btn-group button{
+        border-top: 0 !important;
     }
     nav ul li a{
         justify-content: center;
@@ -816,12 +910,16 @@ footer hr{
     li.more:hover .morelist{
         display: flex;
     }
+    .more .morelist.show{
+        display: none;
+    }
     li.more:hover svg{
         transform: rotate(180deg);
     }
     .morelist li:hover{
         opacity: .5;
     }
+
     nav .logreg{
         display: flex;
         flex-direction: row;

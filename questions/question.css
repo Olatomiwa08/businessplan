@@ -198,7 +198,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background: url(/asset/mountains.background.webp), #eceff1;
+    background: linear-gradient( 180deg, #2C7AF8 10%, #eceff1 0%) ;
     width: 100%;
     height: 100%;
     min-height: 100vh;
@@ -206,10 +206,44 @@
     background-size: contain;
     padding: 20px;
 }
-.wrapper .logo{
-    width: 100%;
+.wrapper header{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* header .bar{
+    width: 50%;
+} */
+.bar span{
+    width: 30px;
+    background-color: white;
+    height: 3px;
+    display: block;
+    position: relative;
+    /* gap: 20px; */
+}
+.bar span::before{
+    content: "";
+    display: block;
+    position: relative;
+    background: white;
+    width: 30px;
+    height: 3px;
+    top: 6px;
+}
+.bar span::after{
+    content: "";
+    display: flex;
+    position: relative;
+    background: white;
+    width: 30px;
+    height: 3px;
+    top: 10px;
+}
+.wrapper .logo{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
     gap: 8px;
     color: white;
 }
@@ -232,7 +266,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 100%;
     align-self: baseline;
 }
 form .overviewhead h3{
@@ -418,12 +452,34 @@ fieldset p,.overviewhead p{
     padding: 1rem .5rem;
     width: 320px;
     min-height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-200%);
+    transition: all .4s ease-in;
+}
+.span{
+    transform: translateX(0);
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    height: 100vh;
 }
 .tabspy nav{
     display: flex;
     flex-direction: column;
     padding: 0;
     margin-top: 16px;
+}
+.tabspy .logo{
+    background: #2C7AF8;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 .tabspy nav a{
     color: rgb(100 116 139);
@@ -458,4 +514,34 @@ progress {
     height: 18px;
     width: 83.333333%;
     vertical-align: initial;
+}
+@media (min-width:800px){
+    .wrapper{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background: url(/asset/mountains.background.webp), #eceff1;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 20px;
+    }
+    .tabspy{
+        position: relative;
+        transform: translateX(0);
+        height: 100%;
+    }
+    header .bar{
+        display: none;
+    }
+    .overview form{
+        width: 50%;
+    }
+    .tabspy .logo{
+        display: none;
+    }
 }

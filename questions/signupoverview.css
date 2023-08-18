@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.overviewhead{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.overviewhead h3{
+    margin: 0;
+    padding: 0; 
+}
+.overviewhead::after,.overviewhead::before{
+    display: block;
+    content: "";
+    width: 50%;
+    position: relative;
+    background: #000;
+    height: 1px;
+}

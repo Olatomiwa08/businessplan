@@ -49,22 +49,28 @@ header a{
     font-weight: 400;
     opacity: .5;
 }
-#plan{
+.plan{
     text-decoration: none;
     position: relative;
     display: flex;
     flex-direction: column;
     padding: 12px;
     color: black;
+    align-items: center;
+    justify-content: center;
 }
 #plan:hover{
     background: rgb(100, 116, 139,.1);
 }
-#plan h1{
+.plan h1{
     font-weight: 400;
     text-align: center;
     opacity: .2;
     margin-top: 30px;
+}
+.plan .btn{
+    background: rgb(37 99 235);
+    color: white;
 }
 a .datecontainer{
     display: flex;
