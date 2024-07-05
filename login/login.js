@@ -1,38 +1,38 @@
-let email = document.getElementById("email")
-let password = document.getElementById("password")
-let login = document.getElementById("log")
-let form = document.getElementById("form")
+
+let loginForm = document.getElementById('loginForm')
 let check = document.getElementById("check")
 let incorrectpassword = document.getElementById("incorrectpassword")
-email.onchange = function(){
-    if(email.value !== localStorage.getItem("saveMyemail")){
-        alert("email not correct")
-    }
-}
-password.onchange = function(){
-    if(password.value !== localStorage.getItem("savepassword")){
-        incorrectpassword.innerHTML = "Please enter a correct password"
-    }else{
-        incorrectpassword.style.display = "none"
-    }
-}
-// login.addEventListener("click",function(){
-//     if(password !== localStorage.getItem("savepassword")){
-//         // alert("Incorrect password, Please enter a correct password")
-//         return false
-//     }else if(email.value == ""){
-//         alert("enter")
-//     }
-//     return false
-// })
-function validate(){
-    if(password.value !== localStorage.getItem("savepassword")){
-        alert("Incorrect password, Please enter a correct password")
-        return false
+
+
+loginForm.onsubmit = function(event) {
+    
+    let emailInput = document.getElementById('email');
+    let passwordInput = document.getElementById('password');
+    let email = emailInput.value.trim();
+    let password = passwordInput.value.trim();
+
+    let users = localStorage.getItem('users');
+    
+    if (!users) {
+        alert('No users signed up yet.');
+        event.preventDefault();
+        return;
     }
     
-    return ( true )
+    users = JSON.parse(users);
+    
+    let user = users.find(user => user.email === email && user.password === password);
+    
+    if (user) {
+        alert('Login successful!');
+        emailInput.value = '';
+        passwordInput.value = '';
+    } else {
+        alert('Invalid email or password.');
+        event.preventDefault();
+    }
 }
+
 check.addEventListener("click",()=>{
     if(check.checked){
         password.setAttribute("type","text")
